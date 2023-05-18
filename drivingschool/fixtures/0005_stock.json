@@ -1,0 +1,974 @@
+[
+  {
+    "model": "drivingschool.stock",
+    "pk": 1,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 1
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 2,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 2
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 3,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 3
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 4,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 4
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 5,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 5
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 6,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 6
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 7,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 7
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 8,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 8
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 9,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 9
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 10,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 10
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 11,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 11
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 12,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 12
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 13,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 13
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 14,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 14
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 15,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 15
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 16,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 16
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 17,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 17
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 18,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 18
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 19,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 19
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 20,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 20
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 21,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 21
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 22,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 22
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 23,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 23
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 24,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 24
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 25,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 25
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 26,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 26
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 27,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 27
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 28,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 28
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 29,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 29
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 30,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 30
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 31,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 31
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 32,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 32
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 33,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 33
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 34,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 34
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 35,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 35
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 36,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 36
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 37,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 37
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 38,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 38
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 39,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 39
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 40,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 40
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 41,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 41
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 42,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 42
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 43,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 43
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 44,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 44
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 45,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 45
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 46,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 46
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 47,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 47
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 48,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 48
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 49,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 49
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 50,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 50
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 55,
+    "fields": {
+      "stock": 5,
+      "bar": 1,
+      "reference": 6
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 66,
+    "fields": {
+      "stock": 0,
+      "bar": 1,
+      "reference": 12
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 70,
+    "fields": {
+      "stock": 1,
+      "bar": 1,
+      "reference": 2
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 76,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 34
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 77,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 6
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 78,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 16
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 79,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 17
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 80,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 33
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 81,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 29
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 82,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 41
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 83,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 44
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 84,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 41
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 85,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 11
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 86,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 43
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 87,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 10
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 88,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 14
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 89,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 22
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 90,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 28
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 91,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 35
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 92,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 9
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 93,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 11
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 94,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 26
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 95,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 30
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 96,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 39
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 97,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 3
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 98,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 4
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 99,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 36
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 100,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 37
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 101,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 27
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 102,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 49
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 103,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 47
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 104,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 44
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 105,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 8
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 106,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 1
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 107,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 50
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 108,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 17
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 109,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 21
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 110,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 38
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 111,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 40
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 112,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 32
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 113,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 12
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 114,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 41
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 115,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 24
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 116,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 20
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 117,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 15
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 118,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 2
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 119,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 48
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 120,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 6
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 121,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 16
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 122,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 19
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 123,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 45
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 124,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 46
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 125,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 42
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 126,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 31
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 127,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 23
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 128,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 7
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 129,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 34
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 130,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 18
+    }
+  }
+]

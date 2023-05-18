@@ -1,0 +1,21 @@
+[
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "bartenders",
+      "permissions": [
+          69,
+          72,
+          85,
+          88,
+          73,
+          74,
+          75,
+          81,
+          82,
+          84
+      ]
+    }
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "model": "drivingschool.reference",
+    "pk": 1,
+    "fields": {
+      "ref": "007",
+      "name": "007",
+      "description": "Light and hoppy."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 2,
+    "fields": {
+      "ref": "100",
+      "name": "100",
+      "description": "A super smooth ruby ale. Traditional in its design and delicious in its execution. Dark fruit flavours and a bitterness of 6/10 leave you with a spicy finish and a moreish mouth feel. A very popular ale with its depth of flavour. Roasted barely adds colour and no less than five hops added in three stages give complexity."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 3,
+    "fields": {
+      "ref": "101",
+      "name": "101",
+      "description": "A Brew to clebrate our 101st year of brewing - Dark smooth roasted Malts creating a depth of flavours with a combination of whole leaf  Duo of Green Bullet & Willamette hops to give an exciting clean fruity Hoppiness that will leave you wanting more."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 4,
+    "fields": {
+      "ref": "1049_Dead",
+      "name": "1049 Dead",
+      "description": "A dark fruity vibrant Mild. The selection of malts and English hops produce a fruity chocolate taste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 5,
+    "fields": {
+      "ref": "1049_Grey",
+      "name": "1049 Grey",
+      "description": "A variation on our regular Mild with the addition of Earl Grey tea to provide a subtle hint of Bergamot."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 6,
+    "fields": {
+      "ref": "1066",
+      "name": "1066",
+      "description": "A traditional country bitter recipe, hoppy with a fruity, bitter finish."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 7,
+    "fields": {
+      "ref": "1066",
+      "name": "1066",
+      "description": "A classic, strong English pale ale with a powerful combination of warmth, strength and a subtle hop aroma. A light colour and clean palate give an unusual quality to a beer of this strength."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 8,
+    "fields": {
+      "ref": "1077_Anniversary_Ale",
+      "name": "1077 Anniversary Ale",
+      "description": "Warm copper colour with a vibrant fruit aroma and taste. A full flavoured classic bitter."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 9,
+    "fields": {
+      "ref": "11_Knights_in_Brazil",
+      "name": "11 Knights in Brazil",
+      "description": "Classic British bitter"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 10,
+    "fields": {
+      "ref": "1767_Founders_Ale",
+      "name": "1767 Founders Ale",
+      "description": "A classic premium ale. Distinctive, rich and full-bodied with a fruity, dry hop, spicy finish."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 11,
+    "fields": {
+      "ref": "1832_Cuckold_Alley_Ale",
+      "name": "1832 Cuckold Alley Ale",
+      "description": "Well-hopped and so very refreshing, this is an immensely drinkable premium bitter with a marked estery aroma and distinctive roasted malt flavours."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 12,
+    "fields": {
+      "ref": "1849",
+      "name": "1849",
+      "description": "A complex blend of choice coloured malts and English Ale Malt balanced by Invert Sugar and Golding Hops. A darker more traditional ale with a very distinct taste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 13,
+    "fields": {
+      "ref": "1872_Porter",
+      "name": "1872 Porter",
+      "description": "Rich, complex and dark porter from an original 1872 recipe, with an old port nose, and coffee and bitter chocolate flavours on the palate.  The ideal beer for chilly Autumn evenings and winter nights. Champion Beer of Great Britain 2013."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 14,
+    "fields": {
+      "ref": "1880_Ale",
+      "name": "1880 Ale",
+      "description": "A light golden ale made with 100% U.K pale and lager malts, seasoned with top quality German lager hops , and the addition of romas hops from Germany and France."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 15,
+    "fields": {
+      "ref": "1910_Porter",
+      "name": "1910 Porter",
+      "description": "Six different malts give a depth to this beer, which is hopped at five stages of the brewing process to allow the character of the noble hop varieties to shine through."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 16,
+    "fields": {
+      "ref": "1911_Celebration_Ale",
+      "name": "1911 Celebration Ale",
+      "description": "A claret coloured beer with a flavour of malt biscuit accompanied by apple undertones derived from the late addition of hops and a generous helping of dark crystal malt."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 17,
+    "fields": {
+      "ref": "1st_Lite",
+      "name": "1st Lite",
+      "description": "A pale bitter with grapefruit and citrus tones and a ‘stay in the mouth’ after taste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 18,
+    "fields": {
+      "ref": "2008",
+      "name": "2008",
+      "description": "Brewed to celebrate Liverpool's 'City of Culture' status. A full, clean and refreshing pale coloured bitter with an abundance of citrus hop character created by the blend of dry and late hopping techniques. It also has subtle hints of malt and fruit on the aroma and  palate which gives the beer a well rounded balance."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 19,
+    "fields": {
+      "ref": "2010_-_A_Beer_Odyssey",
+      "name": "2010 - A Beer Odyssey",
+      "description": "A blend of the finest malts and three varieties of hops, Challenger, Bobek and Cluster, give this mid brown ale a smooth malty taste with a subtle floral finish."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 20,
+    "fields": {
+      "ref": "2012",
+      "name": "2012",
+      "description": "Golden."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 21,
+    "fields": {
+      "ref": "21st_Anniversary",
+      "name": "21st Anniversary",
+      "description": "This brown beer has caramel and chocolate overtones together with fruity taste and aromas."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 22,
+    "fields": {
+      "ref": "22",
+      "name": "22",
+      "description": "A wonderfully balanced best bitter with good malty flavour and dark fruit notes, these are offset by a strong hop with a very clean finish. A great thirst quenching beer for any time of the day."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 23,
+    "fields": {
+      "ref": "24_Carrot",
+      "name": "24 Carrot",
+      "description": "Smooth aromas of citrus and blackberry with a spicy and cosy blanket of malt flavoured hoppiness."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 24,
+    "fields": {
+      "ref": "24_Carrot",
+      "name": "24 Carrot",
+      "description": "Pale Gold coloured ,  Fruity, Floral, Citrus aromas, with  Malty, Lemon, Blackcurrant flavours"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 25,
+    "fields": {
+      "ref": "25_[Anniversary_Ale]",
+      "name": "25 [Anniversary Ale]",
+      "description": "An explosion of flavours originating from American Cascade hops gives this brilliant pale golden beer a fresh aroma and fruit filled finish. Originally brewed to celebrate the brewery's 25th Anniversary in June 2004."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 26,
+    "fields": {
+      "ref": "25th_Anniversary_Ale",
+      "name": "25th Anniversary Ale",
+      "description": "Brewed for Ballard’s  25th anniversary in July 2005, 25th Anniversary Ale contains all the malts;  pale ale, crystal and chocolate, and all the hops;  fuggles, geldings and phoenix, which are regularly used in all our brews. The tawny golden beer has a rich and delicious complexity of aromas and flavours."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 27,
+    "fields": {
+      "ref": "25th_Birthday_Celebration_Ale",
+      "name": "25th Birthday Celebration Ale",
+      "description": "A light blonde ale with English Pioneer, Slovenian Styrian Golding and American Chinook hops give a heady combination of citrusy flavours and a light spicy finish. A real thirst quencher!"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 28,
+    "fields": {
+      "ref": "2B's",
+      "name": "2B's",
+      "description": "Light brown coloured, with a crisp refreshing aftertaste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 29,
+    "fields": {
+      "ref": "2XS",
+      "name": "2XS",
+      "description": "A full flavoured, reddish beer with a strong fruity, hoppy aroma."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 30,
+    "fields": {
+      "ref": "3_/_6",
+      "name": "3 / 6 ",
+      "description": "Light copper colour, peppery spice and full on bitterness, good session beer."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 31,
+    "fields": {
+      "ref": "3_Score",
+      "name": "3 Score",
+      "description": "An amber beer with a malty taste, fruity tang and long, raisin aftertaste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 32,
+    "fields": {
+      "ref": "3_Squared",
+      "name": "3 Squared",
+      "description": "A complex and sophisticated IPA, using a trio of assertive American hops. It gets its name from being hopped in three stages of the brewing process, with each addition using three types of hop. Aromas of resinous pine, orange and just the right level of citrussiness that you'd expect of a modern IPA.  A dry finish and moderate bitterness make this deceptively quaffable!"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 33,
+    "fields": {
+      "ref": "303_AD",
+      "name": "303 AD",
+      "description": "English Malt and English Hops combine to make a robust English beer. Dry and crisp with a hint of citrus."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 34,
+    "fields": {
+      "ref": "3B's",
+      "name": "3B's",
+      "description": "A superb amber brew with distinctive taste and a full nutty malt flavour beneath the hops."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 35,
+    "fields": {
+      "ref": "3point8_Lager",
+      "name": "3point8 Lager",
+      "description": "It has a beautiful pale colour with a clean, crisp refreshing taste – great for quenching thirst, especially on those sunny summer days!"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 36,
+    "fields": {
+      "ref": "4_a'that",
+      "name": "4 a'that",
+      "description": "A dark amber, three hop beer with rich malt and fragrant Cascade hop characteristics,"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 37,
+    "fields": {
+      "ref": "44_Special",
+      "name": "44 Special",
+      "description": "A tawny coloured, full-bodied, smooth beer that is rich and sweet with the aroma of ripe hops and fruits."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 38,
+    "fields": {
+      "ref": "60_/-",
+      "name": "60 /-",
+      "description": "A dark malty beer with a refreshing hint of roast barley. A session beer for the discerning volume drinker."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 39,
+    "fields": {
+      "ref": "60/-",
+      "name": "60/-",
+      "description": "A dark nutty mild"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 40,
+    "fields": {
+      "ref": "65_Mild_Brown_Ale",
+      "name": "65 Mild Brown Ale",
+      "description": "Malty Hazelnut Chocolate Mild with a hint of dark cherry."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 41,
+    "fields": {
+      "ref": "70_/-",
+      "name": "70 /-",
+      "description": "Tawny coloured with creamy quenching flavour, where malted barley flavours are well balanced with a delicate hop aroma."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 42,
+    "fields": {
+      "ref": "80_/-",
+      "name": "80 /-",
+      "description": "A malty copper coloured beer with hop and fruit. It has a superb creamy head and polished clarity. A classic 80/- Ale. Crystal and roasted malt are combined with wheat to give a full roasted malty flavour. The hops give a sweet floral fruity nose and subtle bitterness."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 43,
+    "fields": {
+      "ref": "92_Squadron",
+      "name": "92 Squadron",
+      "description": "A copper-hued premium best bitter, Brewed with a blend of hops from both the UK & USA for a refreshing hoppy finish."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 44,
+    "fields": {
+      "ref": "99_Red_Baboons",
+      "name": "99 Red Baboons",
+      "description": "An unusual combination of fruity hoppyness with a dark, malty side.  Very dark in colour with reddish hue, and brewed with Pilgrim, Celeia, Amarillo hops."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 45,
+    "fields": {
+      "ref": "A_Bitter_tale",
+      "name": "A Bitter tale",
+      "description": "A traditional English bitter heavily hopped with Fuggles And Goldings hops."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 46,
+    "fields": {
+      "ref": "A_Drop_of_Nelsons_Blood",
+      "name": "A Drop of Nelsons Blood",
+      "description": "An easy drinking but flavourful bitter originally brewed for Trafalgar Day. After the battle, Nelson’s body was returned to England preserved in a barrel of brandy. It is said that the sailors on the Victory drank some of the brandy as part of their grog ration, which became known as Nelson’s Blood. Every glass contains a drop of brandy."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 47,
+    "fields": {
+      "ref": "A_over_T",
+      "name": "A over T",
+      "description": "Aromas over Tongham - Deep tawny colour, complex and powerful yet well balanced with fruity notes, and hints of chocolate & raisins. A distinctive ale from the 'Barley Wine' stable."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 48,
+    "fields": {
+      "ref": "A_pint_of_the_Ewe-sual",
+      "name": "A pint of the Ewe-sual",
+      "description": "Light amber in colour. Well balanced with a gentle citrus aroma, a distinctive bitterness and a touch of spiciness."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 49,
+    "fields": {
+      "ref": "A_Pinta_Bitter",
+      "name": "A Pinta Bitter",
+      "description": "A rich mahogany coloured beer with bags of malt flavour balanced by a fruity hop aftertaste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 50,
+    "fields": {
+      "ref": "A_Rye_Smile",
+      "name": "A Rye Smile",
+      "description": "Brand new lager style beer using a variety of Crystal Rye Malt. Pale strong and thirst quenching."
+    }
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$LOSPmRkwrcKZxI52sr9PzB$SASm/0X7gI4SCYrM3ZxK1b1Raxc6zIeGpjBXFZU/krw=",
+      "last_login": "2022-10-02T16:14:17.418Z",
+      "is_superuser": true,
+      "username": "gildas",
+      "first_name": "Gildas",
+      "last_name": "Le Drogoff",
+      "email": "gildas.le-drogoff@epitech.eu",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-09-26T14:51:26Z",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$LOSPmRkwrcKZxI52sr9PzB$SASm/0X7gI4SCYrM3ZxK1b1Raxc6zIeGpjBXFZU/krw=",
+      "last_login": "2022-09-30T14:34:26.064Z",
+      "is_superuser": false,
+      "username": "antoine",
+      "first_name": "Antoine",
+      "last_name": "Le Barman",
+      "email": "antoine@mybar.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-09-30T14:36:49Z",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$LOSPmRkwrcKZxI52sr9PzB$SASm/0X7gI4SCYrM3ZxK1b1Raxc6zIeGpjBXFZU/krw=",
+      "last_login": "2022-10-02T15:45:58Z",
+      "is_superuser": false,
+      "username": "apprentice",
+      "first_name": "apprentice",
+      "last_name": "lastname",
+      "email": "apprentice@lastname.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-10-01T14:17:12Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
