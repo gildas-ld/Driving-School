@@ -48,10 +48,12 @@ class Stock(models.Model):
     class Meta:
         ordering = ["id"]
 
+
 class PackOfCourseHours(models.Model):
     name = models.TextField(blank=True, null=True)
     price = models.FloatField(blank=True, null=True)
     number_of_hours = models.IntegerField(blank=True, null=True)
+
 
 class LessonsTaken(models.Model):
     customuser = models.ForeignKey(

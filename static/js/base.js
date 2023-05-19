@@ -1,4 +1,4 @@
-console.log('JavaScript here!')
+console.log("JavaScript here!");
 AOS.init({
   duration: 1200,
-})
+});

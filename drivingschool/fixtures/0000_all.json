@@ -1,3003 +1,2960 @@
 [
-    {
-      "model": "accounts.customuser",
-      "pk": 1,
-      "fields": {
-        "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-        "last_login": "2022-10-02T16:14:17.418Z",
-        "is_superuser": true,
-        "username": "gildas",
-        "first_name": "Gildas",
-        "last_name": "Le Drogoff",
-        "email": "gildas.le-drogoff@epitech.eu",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2022-09-26T14:51:26Z",
-        "groups": [
-          1
-        ],
-        "user_permissions": []
-      }
-    },
-    {
-      "model": "accounts.customuser",
-      "pk": 2,
-      "fields": {
-        "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-        "last_login": "2022-09-30T14:34:26.064Z",
-        "is_superuser": false,
-        "username": "antoine",
-        "first_name": "Antoine",
-        "last_name": "Le Barman",
-        "email": "antoine@mybar.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2022-09-30T14:36:49Z",
-        "groups": [
-          1
-        ],
-        "user_permissions": []
-      }
-    },
-    {
-      "model": "accounts.customuser",
-      "pk": 3,
-      "fields": {
-        "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-        "last_login": "2022-10-02T15:45:58Z",
-        "is_superuser": false,
-        "username": "apprentice",
-        "first_name": "apprentice",
-        "last_name": "lastname",
-        "email": "apprentice@lastname.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2022-10-01T14:17:12Z",
-        "groups": [],
-        "user_permissions": []
-      }
-    },{
-      "model": "accounts.customuser",
-      "pk": 4,
-      "fields": {
-        "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-        "last_login": "2023-05-29T15:23:10.013Z",
-        "is_superuser": false,
-        "username": "test_student",
-        "first_name": "Igor",
-        "last_name": "Ortega",
-        "email": "test@epitech.eu",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2023-05-29T15:21:51Z",
-        "groups": [
-          2
-        ],
-        "user_permissions": [
-          104,
-          100
-        ]
-      }
-    },
-    {
-      "model": "auth.group",
-      "pk": 1,
-      "fields": {
-        "name": "bartenders",
-        "permissions": [
-          69,
-          72,
-          85,
-          88,
-          73,
-          74,
-          75,
-          81,
-          82,
-          84
-        ]
-      }
-    },
-    {
-      "model": "auth.group",
-      "pk": 2,
-      "fields": {
-        "name": "Student",
-        "permissions": [
-          104,
-          100
-        ]
-      }
-    },
-    {
-      "model": "auth.group",
-      "pk": 3,
-      "fields": {
-        "name": "Instructor",
-        "permissions": [
-          101,
-          102,
-          103,
-          104,
-          100
-        ]
-      }
-    },
-    {
-      "model": "auth.group",
-      "pk": 4,
-      "fields": {
-        "name": "Secretary",
-        "permissions": [
-          101,
-          102,
-          103,
-          104
-        ]
-      }
-    },
-    {
-      "model": "auth.group",
-      "pk": 5,
-      "fields": {
-        "name": "Admin",
-        "permissions": [
-          101,
-          102,
-          103,
-          104,
-          97,
-          98,
-          99,
-          100
-        ]
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 1,
-      "fields": {
-        "name": "Can add log entry",
-        "content_type": 1,
-        "codename": "add_logentry"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 2,
-      "fields": {
-        "name": "Can change log entry",
-        "content_type": 1,
-        "codename": "change_logentry"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 3,
-      "fields": {
-        "name": "Can delete log entry",
-        "content_type": 1,
-        "codename": "delete_logentry"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 4,
-      "fields": {
-        "name": "Can view log entry",
-        "content_type": 1,
-        "codename": "view_logentry"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 5,
-      "fields": {
-        "name": "Can add permission",
-        "content_type": 2,
-        "codename": "add_permission"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 6,
-      "fields": {
-        "name": "Can change permission",
-        "content_type": 2,
-        "codename": "change_permission"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 7,
-      "fields": {
-        "name": "Can delete permission",
-        "content_type": 2,
-        "codename": "delete_permission"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 8,
-      "fields": {
-        "name": "Can view permission",
-        "content_type": 2,
-        "codename": "view_permission"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 9,
-      "fields": {
-        "name": "Can add group",
-        "content_type": 3,
-        "codename": "add_group"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 10,
-      "fields": {
-        "name": "Can change group",
-        "content_type": 3,
-        "codename": "change_group"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 11,
-      "fields": {
-        "name": "Can delete group",
-        "content_type": 3,
-        "codename": "delete_group"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 12,
-      "fields": {
-        "name": "Can view group",
-        "content_type": 3,
-        "codename": "view_group"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 13,
-      "fields": {
-        "name": "Can add user",
-        "content_type": 4,
-        "codename": "add_user"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 14,
-      "fields": {
-        "name": "Can change user",
-        "content_type": 4,
-        "codename": "change_user"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 15,
-      "fields": {
-        "name": "Can delete user",
-        "content_type": 4,
-        "codename": "delete_user"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 16,
-      "fields": {
-        "name": "Can view user",
-        "content_type": 4,
-        "codename": "view_user"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 17,
-      "fields": {
-        "name": "Can add content type",
-        "content_type": 5,
-        "codename": "add_contenttype"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 18,
-      "fields": {
-        "name": "Can change content type",
-        "content_type": 5,
-        "codename": "change_contenttype"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 19,
-      "fields": {
-        "name": "Can delete content type",
-        "content_type": 5,
-        "codename": "delete_contenttype"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 20,
-      "fields": {
-        "name": "Can view content type",
-        "content_type": 5,
-        "codename": "view_contenttype"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 21,
-      "fields": {
-        "name": "Can add session",
-        "content_type": 6,
-        "codename": "add_session"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 22,
-      "fields": {
-        "name": "Can change session",
-        "content_type": 6,
-        "codename": "change_session"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 23,
-      "fields": {
-        "name": "Can delete session",
-        "content_type": 6,
-        "codename": "delete_session"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 24,
-      "fields": {
-        "name": "Can view session",
-        "content_type": 6,
-        "codename": "view_session"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 25,
-      "fields": {
-        "name": "Can add auth group",
-        "content_type": 7,
-        "codename": "add_authgroup"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 26,
-      "fields": {
-        "name": "Can change auth group",
-        "content_type": 7,
-        "codename": "change_authgroup"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 27,
-      "fields": {
-        "name": "Can delete auth group",
-        "content_type": 7,
-        "codename": "delete_authgroup"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 28,
-      "fields": {
-        "name": "Can view auth group",
-        "content_type": 7,
-        "codename": "view_authgroup"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 29,
-      "fields": {
-        "name": "Can add auth group permissions",
-        "content_type": 8,
-        "codename": "add_authgrouppermissions"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 30,
-      "fields": {
-        "name": "Can change auth group permissions",
-        "content_type": 8,
-        "codename": "change_authgrouppermissions"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 31,
-      "fields": {
-        "name": "Can delete auth group permissions",
-        "content_type": 8,
-        "codename": "delete_authgrouppermissions"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 32,
-      "fields": {
-        "name": "Can view auth group permissions",
-        "content_type": 8,
-        "codename": "view_authgrouppermissions"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 33,
-      "fields": {
-        "name": "Can add auth permission",
-        "content_type": 9,
-        "codename": "add_authpermission"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 34,
-      "fields": {
-        "name": "Can change auth permission",
-        "content_type": 9,
-        "codename": "change_authpermission"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 35,
-      "fields": {
-        "name": "Can delete auth permission",
-        "content_type": 9,
-        "codename": "delete_authpermission"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 36,
-      "fields": {
-        "name": "Can view auth permission",
-        "content_type": 9,
-        "codename": "view_authpermission"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 37,
-      "fields": {
-        "name": "Can add auth user",
-        "content_type": 10,
-        "codename": "add_authuser"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 38,
-      "fields": {
-        "name": "Can change auth user",
-        "content_type": 10,
-        "codename": "change_authuser"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 39,
-      "fields": {
-        "name": "Can delete auth user",
-        "content_type": 10,
-        "codename": "delete_authuser"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 40,
-      "fields": {
-        "name": "Can view auth user",
-        "content_type": 10,
-        "codename": "view_authuser"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 41,
-      "fields": {
-        "name": "Can add auth user groups",
-        "content_type": 11,
-        "codename": "add_authusergroups"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 42,
-      "fields": {
-        "name": "Can change auth user groups",
-        "content_type": 11,
-        "codename": "change_authusergroups"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 43,
-      "fields": {
-        "name": "Can delete auth user groups",
-        "content_type": 11,
-        "codename": "delete_authusergroups"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 44,
-      "fields": {
-        "name": "Can view auth user groups",
-        "content_type": 11,
-        "codename": "view_authusergroups"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 45,
-      "fields": {
-        "name": "Can add auth user user permissions",
-        "content_type": 12,
-        "codename": "add_authuseruserpermissions"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 46,
-      "fields": {
-        "name": "Can change auth user user permissions",
-        "content_type": 12,
-        "codename": "change_authuseruserpermissions"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 47,
-      "fields": {
-        "name": "Can delete auth user user permissions",
-        "content_type": 12,
-        "codename": "delete_authuseruserpermissions"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 48,
-      "fields": {
-        "name": "Can view auth user user permissions",
-        "content_type": 12,
-        "codename": "view_authuseruserpermissions"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 49,
-      "fields": {
-        "name": "Can add django admin log",
-        "content_type": 13,
-        "codename": "add_djangoadminlog"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 50,
-      "fields": {
-        "name": "Can change django admin log",
-        "content_type": 13,
-        "codename": "change_djangoadminlog"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 51,
-      "fields": {
-        "name": "Can delete django admin log",
-        "content_type": 13,
-        "codename": "delete_djangoadminlog"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 52,
-      "fields": {
-        "name": "Can view django admin log",
-        "content_type": 13,
-        "codename": "view_djangoadminlog"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 53,
-      "fields": {
-        "name": "Can add django content type",
-        "content_type": 14,
-        "codename": "add_djangocontenttype"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 54,
-      "fields": {
-        "name": "Can change django content type",
-        "content_type": 14,
-        "codename": "change_djangocontenttype"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 55,
-      "fields": {
-        "name": "Can delete django content type",
-        "content_type": 14,
-        "codename": "delete_djangocontenttype"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 56,
-      "fields": {
-        "name": "Can view django content type",
-        "content_type": 14,
-        "codename": "view_djangocontenttype"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 57,
-      "fields": {
-        "name": "Can add django migrations",
-        "content_type": 15,
-        "codename": "add_djangomigrations"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 58,
-      "fields": {
-        "name": "Can change django migrations",
-        "content_type": 15,
-        "codename": "change_djangomigrations"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 59,
-      "fields": {
-        "name": "Can delete django migrations",
-        "content_type": 15,
-        "codename": "delete_djangomigrations"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 60,
-      "fields": {
-        "name": "Can view django migrations",
-        "content_type": 15,
-        "codename": "view_djangomigrations"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 61,
-      "fields": {
-        "name": "Can add django session",
-        "content_type": 16,
-        "codename": "add_djangosession"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 62,
-      "fields": {
-        "name": "Can change django session",
-        "content_type": 16,
-        "codename": "change_djangosession"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 63,
-      "fields": {
-        "name": "Can delete django session",
-        "content_type": 16,
-        "codename": "delete_djangosession"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 64,
-      "fields": {
-        "name": "Can view django session",
-        "content_type": 16,
-        "codename": "view_djangosession"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 65,
-      "fields": {
-        "name": "Can add bar",
-        "content_type": 17,
-        "codename": "add_bar"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 66,
-      "fields": {
-        "name": "Can change bar",
-        "content_type": 17,
-        "codename": "change_bar"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 67,
-      "fields": {
-        "name": "Can delete bar",
-        "content_type": 17,
-        "codename": "delete_bar"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 68,
-      "fields": {
-        "name": "Can view bar",
-        "content_type": 17,
-        "codename": "view_bar"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 69,
-      "fields": {
-        "name": "Can add order",
-        "content_type": 18,
-        "codename": "add_order"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 70,
-      "fields": {
-        "name": "Can change order",
-        "content_type": 18,
-        "codename": "change_order"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 71,
-      "fields": {
-        "name": "Can delete order",
-        "content_type": 18,
-        "codename": "delete_order"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 72,
-      "fields": {
-        "name": "Can view order",
-        "content_type": 18,
-        "codename": "view_order"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 73,
-      "fields": {
-        "name": "Can add reference",
-        "content_type": 19,
-        "codename": "add_reference"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 74,
-      "fields": {
-        "name": "Can change reference",
-        "content_type": 19,
-        "codename": "change_reference"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 75,
-      "fields": {
-        "name": "Can delete reference",
-        "content_type": 19,
-        "codename": "delete_reference"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 76,
-      "fields": {
-        "name": "Can view reference",
-        "content_type": 19,
-        "codename": "view_reference"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 77,
-      "fields": {
-        "name": "Can add view stock",
-        "content_type": 20,
-        "codename": "add_viewstock"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 78,
-      "fields": {
-        "name": "Can change view stock",
-        "content_type": 20,
-        "codename": "change_viewstock"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 79,
-      "fields": {
-        "name": "Can delete view stock",
-        "content_type": 20,
-        "codename": "delete_viewstock"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 80,
-      "fields": {
-        "name": "Can view view stock",
-        "content_type": 20,
-        "codename": "view_viewstock"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 81,
-      "fields": {
-        "name": "Can add stock",
-        "content_type": 21,
-        "codename": "add_stock"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 82,
-      "fields": {
-        "name": "Can change stock",
-        "content_type": 21,
-        "codename": "change_stock"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 83,
-      "fields": {
-        "name": "Can delete stock",
-        "content_type": 21,
-        "codename": "delete_stock"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 84,
-      "fields": {
-        "name": "Can view stock",
-        "content_type": 21,
-        "codename": "view_stock"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 85,
-      "fields": {
-        "name": "Can add order item",
-        "content_type": 22,
-        "codename": "add_orderitem"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 86,
-      "fields": {
-        "name": "Can change order item",
-        "content_type": 22,
-        "codename": "change_orderitem"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 87,
-      "fields": {
-        "name": "Can delete order item",
-        "content_type": 22,
-        "codename": "delete_orderitem"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 88,
-      "fields": {
-        "name": "Can view order item",
-        "content_type": 22,
-        "codename": "view_orderitem"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 89,
-      "fields": {
-        "name": "Can add email address",
-        "content_type": 23,
-        "codename": "add_emailaddress"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 90,
-      "fields": {
-        "name": "Can change email address",
-        "content_type": 23,
-        "codename": "change_emailaddress"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 91,
-      "fields": {
-        "name": "Can delete email address",
-        "content_type": 23,
-        "codename": "delete_emailaddress"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 92,
-      "fields": {
-        "name": "Can view email address",
-        "content_type": 23,
-        "codename": "view_emailaddress"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 93,
-      "fields": {
-        "name": "Can add email confirmation",
-        "content_type": 24,
-        "codename": "add_emailconfirmation"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 94,
-      "fields": {
-        "name": "Can change email confirmation",
-        "content_type": 24,
-        "codename": "change_emailconfirmation"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 95,
-      "fields": {
-        "name": "Can delete email confirmation",
-        "content_type": 24,
-        "codename": "delete_emailconfirmation"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 96,
-      "fields": {
-        "name": "Can view email confirmation",
-        "content_type": 24,
-        "codename": "view_emailconfirmation"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 97,
-      "fields": {
-        "name": "Can add pack of course hours",
-        "content_type": 25,
-        "codename": "add_packofcoursehours"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 98,
-      "fields": {
-        "name": "Can change pack of course hours",
-        "content_type": 25,
-        "codename": "change_packofcoursehours"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 99,
-      "fields": {
-        "name": "Can delete pack of course hours",
-        "content_type": 25,
-        "codename": "delete_packofcoursehours"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 100,
-      "fields": {
-        "name": "Can view pack of course hours",
-        "content_type": 25,
-        "codename": "view_packofcoursehours"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 101,
-      "fields": {
-        "name": "Can add lessons taken",
-        "content_type": 26,
-        "codename": "add_lessonstaken"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 102,
-      "fields": {
-        "name": "Can change lessons taken",
-        "content_type": 26,
-        "codename": "change_lessonstaken"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 103,
-      "fields": {
-        "name": "Can delete lessons taken",
-        "content_type": 26,
-        "codename": "delete_lessonstaken"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 104,
-      "fields": {
-        "name": "Can view lessons taken",
-        "content_type": 26,
-        "codename": "view_lessonstaken"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 105,
-      "fields": {
-        "name": "Can add user",
-        "content_type": 27,
-        "codename": "add_customuser"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 106,
-      "fields": {
-        "name": "Can change user",
-        "content_type": 27,
-        "codename": "change_customuser"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 107,
-      "fields": {
-        "name": "Can delete user",
-        "content_type": 27,
-        "codename": "delete_customuser"
-      }
-    },
-    {
-      "model": "auth.permission",
-      "pk": 108,
-      "fields": {
-        "name": "Can view user",
-        "content_type": 27,
-        "codename": "view_customuser"
-      }
-    },
-    {
-      "model": "drivingschool.bar",
-      "pk": 1,
-      "fields": {
-        "name": "1er étage"
-      }
-    },
-    {
-      "model": "drivingschool.bar",
-      "pk": 2,
-      "fields": {
-        "name": "2ème étage"
-      }
-    },
-    {
-      "model": "drivingschool.bar",
-      "pk": 3,
-      "fields": {
-        "name": "3ème étage"
-      }
-    },
-    {
-      "model": "drivingschool.bar",
-      "pk": 4,
-      "fields": {
-        "name": "rooftop"
-      }
-    },
-    {
-      "model": "drivingschool.bar",
-      "pk": 5,
-      "fields": {
-        "name": "skyscrapper"
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 1,
-      "fields": {
-        "ref": "007",
-        "name": "007",
-        "description": "Light and hoppy."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 2,
-      "fields": {
-        "ref": "100",
-        "name": "100",
-        "description": "A super smooth ruby ale. Traditional in its design and delicious in its execution. Dark fruit flavours and a bitterness of 6/10 leave you with a spicy finish and a moreish mouth feel. A very popular ale with its depth of flavour. Roasted barely adds colour and no less than five hops added in three stages give complexity."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 3,
-      "fields": {
-        "ref": "101",
-        "name": "101",
-        "description": "A Brew to clebrate our 101st year of brewing - Dark smooth roasted Malts creating a depth of flavours with a combination of whole leaf  Duo of Green Bullet & Willamette hops to give an exciting clean fruity Hoppiness that will leave you wanting more."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 4,
-      "fields": {
-        "ref": "1049_Dead",
-        "name": "1049 Dead",
-        "description": "A dark fruity vibrant Mild. The selection of malts and English hops produce a fruity chocolate taste."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 5,
-      "fields": {
-        "ref": "1049_Grey",
-        "name": "1049 Grey",
-        "description": "A variation on our regular Mild with the addition of Earl Grey tea to provide a subtle hint of Bergamot."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 6,
-      "fields": {
-        "ref": "1066",
-        "name": "1066",
-        "description": "A traditional country bitter recipe, hoppy with a fruity, bitter finish."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 7,
-      "fields": {
-        "ref": "1066",
-        "name": "1066",
-        "description": "A classic, strong English pale ale with a powerful combination of warmth, strength and a subtle hop aroma. A light colour and clean palate give an unusual quality to a beer of this strength."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 8,
-      "fields": {
-        "ref": "1077_Anniversary_Ale",
-        "name": "1077 Anniversary Ale",
-        "description": "Warm copper colour with a vibrant fruit aroma and taste. A full flavoured classic bitter."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 9,
-      "fields": {
-        "ref": "11_Knights_in_Brazil",
-        "name": "11 Knights in Brazil",
-        "description": "Classic British bitter"
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 10,
-      "fields": {
-        "ref": "1767_Founders_Ale",
-        "name": "1767 Founders Ale",
-        "description": "A classic premium ale. Distinctive, rich and full-bodied with a fruity, dry hop, spicy finish."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 11,
-      "fields": {
-        "ref": "1832_Cuckold_Alley_Ale",
-        "name": "1832 Cuckold Alley Ale",
-        "description": "Well-hopped and so very refreshing, this is an immensely drinkable premium bitter with a marked estery aroma and distinctive roasted malt flavours."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 12,
-      "fields": {
-        "ref": "1849",
-        "name": "1849",
-        "description": "A complex blend of choice coloured malts and English Ale Malt balanced by Invert Sugar and Golding Hops. A darker more traditional ale with a very distinct taste."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 13,
-      "fields": {
-        "ref": "1872_Porter",
-        "name": "1872 Porter",
-        "description": "Rich, complex and dark porter from an original 1872 recipe, with an old port nose, and coffee and bitter chocolate flavours on the palate.  The ideal beer for chilly Autumn evenings and winter nights. Champion Beer of Great Britain 2013."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 14,
-      "fields": {
-        "ref": "1880_Ale",
-        "name": "1880 Ale",
-        "description": "A light golden ale made with 100% U.K pale and lager malts, seasoned with top quality German lager hops , and the addition of romas hops from Germany and France."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 15,
-      "fields": {
-        "ref": "1910_Porter",
-        "name": "1910 Porter",
-        "description": "Six different malts give a depth to this beer, which is hopped at five stages of the brewing process to allow the character of the noble hop varieties to shine through."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 16,
-      "fields": {
-        "ref": "1911_Celebration_Ale",
-        "name": "1911 Celebration Ale",
-        "description": "A claret coloured beer with a flavour of malt biscuit accompanied by apple undertones derived from the late addition of hops and a generous helping of dark crystal malt."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 17,
-      "fields": {
-        "ref": "1st_Lite",
-        "name": "1st Lite",
-        "description": "A pale bitter with grapefruit and citrus tones and a ‘stay in the mouth’ after taste."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 18,
-      "fields": {
-        "ref": "2008",
-        "name": "2008",
-        "description": "Brewed to celebrate Liverpool's 'City of Culture' status. A full, clean and refreshing pale coloured bitter with an abundance of citrus hop character created by the blend of dry and late hopping techniques. It also has subtle hints of malt and fruit on the aroma and  palate which gives the beer a well rounded balance."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 19,
-      "fields": {
-        "ref": "2010_-_A_Beer_Odyssey",
-        "name": "2010 - A Beer Odyssey",
-        "description": "A blend of the finest malts and three varieties of hops, Challenger, Bobek and Cluster, give this mid brown ale a smooth malty taste with a subtle floral finish."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 20,
-      "fields": {
-        "ref": "2012",
-        "name": "2012",
-        "description": "Golden."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 21,
-      "fields": {
-        "ref": "21st_Anniversary",
-        "name": "21st Anniversary",
-        "description": "This brown beer has caramel and chocolate overtones together with fruity taste and aromas."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 22,
-      "fields": {
-        "ref": "22",
-        "name": "22",
-        "description": "A wonderfully balanced best bitter with good malty flavour and dark fruit notes, these are offset by a strong hop with a very clean finish. A great thirst quenching beer for any time of the day."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 23,
-      "fields": {
-        "ref": "24_Carrot",
-        "name": "24 Carrot",
-        "description": "Smooth aromas of citrus and blackberry with a spicy and cosy blanket of malt flavoured hoppiness."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 24,
-      "fields": {
-        "ref": "24_Carrot",
-        "name": "24 Carrot",
-        "description": "Pale Gold coloured ,  Fruity, Floral, Citrus aromas, with  Malty, Lemon, Blackcurrant flavours"
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 25,
-      "fields": {
-        "ref": "25_[Anniversary_Ale]",
-        "name": "25 [Anniversary Ale]",
-        "description": "An explosion of flavours originating from American Cascade hops gives this brilliant pale golden beer a fresh aroma and fruit filled finish. Originally brewed to celebrate the brewery's 25th Anniversary in June 2004."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 26,
-      "fields": {
-        "ref": "25th_Anniversary_Ale",
-        "name": "25th Anniversary Ale",
-        "description": "Brewed for Ballard’s  25th anniversary in July 2005, 25th Anniversary Ale contains all the malts;  pale ale, crystal and chocolate, and all the hops;  fuggles, geldings and phoenix, which are regularly used in all our brews. The tawny golden beer has a rich and delicious complexity of aromas and flavours."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 27,
-      "fields": {
-        "ref": "25th_Birthday_Celebration_Ale",
-        "name": "25th Birthday Celebration Ale",
-        "description": "A light blonde ale with English Pioneer, Slovenian Styrian Golding and American Chinook hops give a heady combination of citrusy flavours and a light spicy finish. A real thirst quencher!"
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 28,
-      "fields": {
-        "ref": "2B's",
-        "name": "2B's",
-        "description": "Light brown coloured, with a crisp refreshing aftertaste."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 29,
-      "fields": {
-        "ref": "2XS",
-        "name": "2XS",
-        "description": "A full flavoured, reddish beer with a strong fruity, hoppy aroma."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 30,
-      "fields": {
-        "ref": "3_/_6",
-        "name": "3 / 6 ",
-        "description": "Light copper colour, peppery spice and full on bitterness, good session beer."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 31,
-      "fields": {
-        "ref": "3_Score",
-        "name": "3 Score",
-        "description": "An amber beer with a malty taste, fruity tang and long, raisin aftertaste."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 32,
-      "fields": {
-        "ref": "3_Squared",
-        "name": "3 Squared",
-        "description": "A complex and sophisticated IPA, using a trio of assertive American hops. It gets its name from being hopped in three stages of the brewing process, with each addition using three types of hop. Aromas of resinous pine, orange and just the right level of citrussiness that you'd expect of a modern IPA.  A dry finish and moderate bitterness make this deceptively quaffable!"
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 33,
-      "fields": {
-        "ref": "303_AD",
-        "name": "303 AD",
-        "description": "English Malt and English Hops combine to make a robust English beer. Dry and crisp with a hint of citrus."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 34,
-      "fields": {
-        "ref": "3B's",
-        "name": "3B's",
-        "description": "A superb amber brew with distinctive taste and a full nutty malt flavour beneath the hops."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 35,
-      "fields": {
-        "ref": "3point8_Lager",
-        "name": "3point8 Lager",
-        "description": "It has a beautiful pale colour with a clean, crisp refreshing taste – great for quenching thirst, especially on those sunny summer days!"
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 36,
-      "fields": {
-        "ref": "4_a'that",
-        "name": "4 a'that",
-        "description": "A dark amber, three hop beer with rich malt and fragrant Cascade hop characteristics,"
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 37,
-      "fields": {
-        "ref": "44_Special",
-        "name": "44 Special",
-        "description": "A tawny coloured, full-bodied, smooth beer that is rich and sweet with the aroma of ripe hops and fruits."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 38,
-      "fields": {
-        "ref": "60_/-",
-        "name": "60 /-",
-        "description": "A dark malty beer with a refreshing hint of roast barley. A session beer for the discerning volume drinker."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 39,
-      "fields": {
-        "ref": "60/-",
-        "name": "60/-",
-        "description": "A dark nutty mild"
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 40,
-      "fields": {
-        "ref": "65_Mild_Brown_Ale",
-        "name": "65 Mild Brown Ale",
-        "description": "Malty Hazelnut Chocolate Mild with a hint of dark cherry."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 41,
-      "fields": {
-        "ref": "70_/-",
-        "name": "70 /-",
-        "description": "Tawny coloured with creamy quenching flavour, where malted barley flavours are well balanced with a delicate hop aroma."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 42,
-      "fields": {
-        "ref": "80_/-",
-        "name": "80 /-",
-        "description": "A malty copper coloured beer with hop and fruit. It has a superb creamy head and polished clarity. A classic 80/- Ale. Crystal and roasted malt are combined with wheat to give a full roasted malty flavour. The hops give a sweet floral fruity nose and subtle bitterness."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 43,
-      "fields": {
-        "ref": "92_Squadron",
-        "name": "92 Squadron",
-        "description": "A copper-hued premium best bitter, Brewed with a blend of hops from both the UK & USA for a refreshing hoppy finish."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 44,
-      "fields": {
-        "ref": "99_Red_Baboons",
-        "name": "99 Red Baboons",
-        "description": "An unusual combination of fruity hoppyness with a dark, malty side.  Very dark in colour with reddish hue, and brewed with Pilgrim, Celeia, Amarillo hops."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 45,
-      "fields": {
-        "ref": "A_Bitter_tale",
-        "name": "A Bitter tale",
-        "description": "A traditional English bitter heavily hopped with Fuggles And Goldings hops."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 46,
-      "fields": {
-        "ref": "A_Drop_of_Nelsons_Blood",
-        "name": "A Drop of Nelsons Blood",
-        "description": "An easy drinking but flavourful bitter originally brewed for Trafalgar Day. After the battle, Nelson’s body was returned to England preserved in a barrel of brandy. It is said that the sailors on the Victory drank some of the brandy as part of their grog ration, which became known as Nelson’s Blood. Every glass contains a drop of brandy."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 47,
-      "fields": {
-        "ref": "A_over_T",
-        "name": "A over T",
-        "description": "Aromas over Tongham - Deep tawny colour, complex and powerful yet well balanced with fruity notes, and hints of chocolate & raisins. A distinctive ale from the 'Barley Wine' stable."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 48,
-      "fields": {
-        "ref": "A_pint_of_the_Ewe-sual",
-        "name": "A pint of the Ewe-sual",
-        "description": "Light amber in colour. Well balanced with a gentle citrus aroma, a distinctive bitterness and a touch of spiciness."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 49,
-      "fields": {
-        "ref": "A_Pinta_Bitter",
-        "name": "A Pinta Bitter",
-        "description": "A rich mahogany coloured beer with bags of malt flavour balanced by a fruity hop aftertaste."
-      }
-    },
-    {
-      "model": "drivingschool.reference",
-      "pk": 50,
-      "fields": {
-        "ref": "A_Rye_Smile",
-        "name": "A Rye Smile",
-        "description": "Brand new lager style beer using a variety of Crystal Rye Malt. Pale strong and thirst quenching."
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 1,
-      "fields": {
-        "stock": 35,
-        "bar": 4,
-        "reference": 1
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 2,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 2
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 3,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 3
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 4,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 4
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 5,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 5
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 6,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 6
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 7,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 7
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 8,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 8
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 9,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 9
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 10,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 10
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 11,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 11
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 12,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 12
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 13,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 13
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 14,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 14
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 15,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 15
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 16,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 16
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 17,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 17
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 18,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 18
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 19,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 19
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 20,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 20
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 21,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 21
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 22,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 22
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 23,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 23
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 24,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 24
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 25,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 25
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 26,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 26
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 27,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 27
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 28,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 28
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 29,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 29
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 30,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 30
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 31,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 31
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 32,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 32
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 33,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 33
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 34,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 34
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 35,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 35
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 36,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 36
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 37,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 37
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 38,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 38
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 39,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 39
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 40,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 40
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 41,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 41
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 42,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 42
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 43,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 43
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 44,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 44
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 45,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 45
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 46,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 46
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 47,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 47
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 48,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 48
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 49,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 49
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 50,
-      "fields": {
-        "stock": 400,
-        "bar": 4,
-        "reference": 50
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 55,
-      "fields": {
-        "stock": 5,
-        "bar": 1,
-        "reference": 6
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 66,
-      "fields": {
-        "stock": 5,
-        "bar": 1,
-        "reference": 12
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 70,
-      "fields": {
-        "stock": 5,
-        "bar": 1,
-        "reference": 2
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 76,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 34
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 77,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 6
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 78,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 16
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 79,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 17
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 80,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 33
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 81,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 29
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 82,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 41
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 83,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 44
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 84,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 41
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 85,
-      "fields": {
-        "stock": 200,
-        "bar": 2,
-        "reference": 11
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 86,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 43
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 87,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 10
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 88,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 14
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 89,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 22
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 90,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 28
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 91,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 35
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 92,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 9
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 93,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 11
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 94,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 26
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 95,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 30
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 96,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 39
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 97,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 3
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 98,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 4
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 99,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 36
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 100,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 37
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 101,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 27
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 102,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 49
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 103,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 47
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 104,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 44
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 105,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 8
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 106,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 1
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 107,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 50
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 108,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 17
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 109,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 21
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 110,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 38
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 111,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 40
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 112,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 32
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 113,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 12
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 114,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 41
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 115,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 24
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 116,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 20
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 117,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 15
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 118,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 2
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 119,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 48
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 120,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 6
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 121,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 16
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 122,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 19
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 123,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 45
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 124,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 46
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 125,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 42
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 126,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 31
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 127,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 23
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 128,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 7
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 129,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 34
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 130,
-      "fields": {
-        "stock": 300,
-        "bar": 3,
-        "reference": 18
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 131,
-      "fields": {
-        "stock": 0,
-        "bar": 1,
-        "reference": 35
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 132,
-      "fields": {
-        "stock": 4,
-        "bar": 1,
-        "reference": 40
-      }
-    },
-    {
-      "model": "drivingschool.stock",
-      "pk": 133,
-      "fields": {
-        "stock": 4,
-        "bar": 1,
-        "reference": 30
-      }
-    },
-    {
-      "model": "drivingschool.order",
-      "pk": 1,
-      "fields": {
-        "order_date": "2022-10-02T17:08:32Z" 
-      }
-    },
-    {
-      "model": "drivingschool.order",
-      "pk": 2,
-      "fields": {
-        "order_date": "2022-10-02T17:14:26.742Z" 
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 1,
-      "fields": {
-        "bar": 1,
-        "order": 1,
-        "reference": 1,
-        "count": 2
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 3,
-      "fields": {
-        "bar": 1,
-        "order": 1,
-        "reference": 2,
-        "count": 1
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 4,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 30,
-        "count": 3
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 5,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 35,
-        "count": 2
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 6,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 40,
-        "count": 1
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 7,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 30,
-        "count": 3
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 8,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 35,
-        "count": 2
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 9,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 40,
-        "count": 1
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 10,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 30,
-        "count": 3
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 11,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 35,
-        "count": 2
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 12,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 40,
-        "count": 1
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 13,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 30,
-        "count": 3
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 14,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 35,
-        "count": 2
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 15,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 40,
-        "count": 1
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 16,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 30,
-        "count": 3
-      }
-    },
-    {
-      "model": "drivingschool.orderitem",
-      "pk": 17,
-      "fields": {
-        "bar": 2,
-        "order": 1,
-        "reference": 35,
-        "count": 3
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 1,
-      "fields": {
-        "app_label": "admin",
-        "model": "logentry"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 2,
-      "fields": {
-        "app_label": "auth",
-        "model": "permission"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 3,
-      "fields": {
-        "app_label": "auth",
-        "model": "group"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 4,
-      "fields": {
-        "app_label": "auth",
-        "model": "user"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 5,
-      "fields": {
-        "app_label": "contenttypes",
-        "model": "contenttype"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 6,
-      "fields": {
-        "app_label": "sessions",
-        "model": "session"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 7,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "authgroup"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 8,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "authgrouppermissions"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 9,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "authpermission"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 10,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "authuser"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 11,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "authusergroups"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 12,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "authuseruserpermissions"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 13,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "djangoadminlog"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 14,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "djangocontenttype"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 15,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "djangomigrations"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 16,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "djangosession"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 17,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "bar"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 18,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "order"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 19,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "reference"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 20,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "viewstock"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 21,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "stock"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 22,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "orderitem"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 23,
-      "fields": {
-        "app_label": "account",
-        "model": "emailaddress"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 24,
-      "fields": {
-        "app_label": "account",
-        "model": "emailconfirmation"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 25,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "packofcoursehours"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 26,
-      "fields": {
-        "app_label": "drivingschool",
-        "model": "lessonstaken"
-      }
-    },
-    {
-      "model": "contenttypes.contenttype",
-      "pk": 27,
-      "fields": {
-        "app_label": "accounts",
-        "model": "customuser"
-      }
+  {
+    "model": "accounts.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2022-10-02T16:14:17.418Z",
+      "is_superuser": true,
+      "username": "gildas",
+      "first_name": "Gildas",
+      "last_name": "Le Drogoff",
+      "email": "gildas.le-drogoff@epitech.eu",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-09-26T14:51:26Z",
+      "groups": [1],
+      "user_permissions": []
     }
-    ]
-    
+  },
+  {
+    "model": "accounts.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2022-09-30T14:34:26.064Z",
+      "is_superuser": false,
+      "username": "antoine",
+      "first_name": "Antoine",
+      "last_name": "Le Barman",
+      "email": "antoine@mybar.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-09-30T14:36:49Z",
+      "groups": [1],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2022-10-02T15:45:58Z",
+      "is_superuser": false,
+      "username": "apprentice",
+      "first_name": "apprentice",
+      "last_name": "lastname",
+      "email": "apprentice@lastname.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-10-01T14:17:12Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.customuser",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2023-05-29T15:23:10.013Z",
+      "is_superuser": false,
+      "username": "test_student",
+      "first_name": "Igor",
+      "last_name": "Ortega",
+      "email": "test@epitech.eu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-05-29T15:21:51Z",
+      "groups": [2],
+      "user_permissions": [104, 100]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "bartenders",
+      "permissions": [69, 72, 85, 88, 73, 74, 75, 81, 82, 84]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "Student",
+      "permissions": [104, 100]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+      "name": "Instructor",
+      "permissions": [101, 102, 103, 104, 100]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 4,
+    "fields": {
+      "name": "Secretary",
+      "permissions": [101, 102, 103, 104]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 5,
+    "fields": {
+      "name": "Admin",
+      "permissions": [101, 102, 103, 104, 97, 98, 99, 100]
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add auth group",
+      "content_type": 7,
+      "codename": "add_authgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change auth group",
+      "content_type": 7,
+      "codename": "change_authgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete auth group",
+      "content_type": 7,
+      "codename": "delete_authgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view auth group",
+      "content_type": 7,
+      "codename": "view_authgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add auth group permissions",
+      "content_type": 8,
+      "codename": "add_authgrouppermissions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change auth group permissions",
+      "content_type": 8,
+      "codename": "change_authgrouppermissions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete auth group permissions",
+      "content_type": 8,
+      "codename": "delete_authgrouppermissions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view auth group permissions",
+      "content_type": 8,
+      "codename": "view_authgrouppermissions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add auth permission",
+      "content_type": 9,
+      "codename": "add_authpermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change auth permission",
+      "content_type": 9,
+      "codename": "change_authpermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete auth permission",
+      "content_type": 9,
+      "codename": "delete_authpermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view auth permission",
+      "content_type": 9,
+      "codename": "view_authpermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add auth user",
+      "content_type": 10,
+      "codename": "add_authuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change auth user",
+      "content_type": 10,
+      "codename": "change_authuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete auth user",
+      "content_type": 10,
+      "codename": "delete_authuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view auth user",
+      "content_type": 10,
+      "codename": "view_authuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add auth user groups",
+      "content_type": 11,
+      "codename": "add_authusergroups"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change auth user groups",
+      "content_type": 11,
+      "codename": "change_authusergroups"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete auth user groups",
+      "content_type": 11,
+      "codename": "delete_authusergroups"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view auth user groups",
+      "content_type": 11,
+      "codename": "view_authusergroups"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add auth user user permissions",
+      "content_type": 12,
+      "codename": "add_authuseruserpermissions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change auth user user permissions",
+      "content_type": 12,
+      "codename": "change_authuseruserpermissions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete auth user user permissions",
+      "content_type": 12,
+      "codename": "delete_authuseruserpermissions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view auth user user permissions",
+      "content_type": 12,
+      "codename": "view_authuseruserpermissions"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add django admin log",
+      "content_type": 13,
+      "codename": "add_djangoadminlog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change django admin log",
+      "content_type": 13,
+      "codename": "change_djangoadminlog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete django admin log",
+      "content_type": 13,
+      "codename": "delete_djangoadminlog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view django admin log",
+      "content_type": 13,
+      "codename": "view_djangoadminlog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add django content type",
+      "content_type": 14,
+      "codename": "add_djangocontenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change django content type",
+      "content_type": 14,
+      "codename": "change_djangocontenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete django content type",
+      "content_type": 14,
+      "codename": "delete_djangocontenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view django content type",
+      "content_type": 14,
+      "codename": "view_djangocontenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add django migrations",
+      "content_type": 15,
+      "codename": "add_djangomigrations"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change django migrations",
+      "content_type": 15,
+      "codename": "change_djangomigrations"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete django migrations",
+      "content_type": 15,
+      "codename": "delete_djangomigrations"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view django migrations",
+      "content_type": 15,
+      "codename": "view_djangomigrations"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add django session",
+      "content_type": 16,
+      "codename": "add_djangosession"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change django session",
+      "content_type": 16,
+      "codename": "change_djangosession"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete django session",
+      "content_type": 16,
+      "codename": "delete_djangosession"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view django session",
+      "content_type": 16,
+      "codename": "view_djangosession"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+      "name": "Can add bar",
+      "content_type": 17,
+      "codename": "add_bar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+      "name": "Can change bar",
+      "content_type": 17,
+      "codename": "change_bar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+      "name": "Can delete bar",
+      "content_type": 17,
+      "codename": "delete_bar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+      "name": "Can view bar",
+      "content_type": 17,
+      "codename": "view_bar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+      "name": "Can add order",
+      "content_type": 18,
+      "codename": "add_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+      "name": "Can change order",
+      "content_type": 18,
+      "codename": "change_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+      "name": "Can delete order",
+      "content_type": 18,
+      "codename": "delete_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+      "name": "Can view order",
+      "content_type": 18,
+      "codename": "view_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+      "name": "Can add reference",
+      "content_type": 19,
+      "codename": "add_reference"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+      "name": "Can change reference",
+      "content_type": 19,
+      "codename": "change_reference"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+      "name": "Can delete reference",
+      "content_type": 19,
+      "codename": "delete_reference"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+      "name": "Can view reference",
+      "content_type": 19,
+      "codename": "view_reference"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+      "name": "Can add view stock",
+      "content_type": 20,
+      "codename": "add_viewstock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+      "name": "Can change view stock",
+      "content_type": 20,
+      "codename": "change_viewstock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+      "name": "Can delete view stock",
+      "content_type": 20,
+      "codename": "delete_viewstock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+      "name": "Can view view stock",
+      "content_type": 20,
+      "codename": "view_viewstock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+      "name": "Can add stock",
+      "content_type": 21,
+      "codename": "add_stock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+      "name": "Can change stock",
+      "content_type": 21,
+      "codename": "change_stock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+      "name": "Can delete stock",
+      "content_type": 21,
+      "codename": "delete_stock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+      "name": "Can view stock",
+      "content_type": 21,
+      "codename": "view_stock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+      "name": "Can add order item",
+      "content_type": 22,
+      "codename": "add_orderitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+      "name": "Can change order item",
+      "content_type": 22,
+      "codename": "change_orderitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+      "name": "Can delete order item",
+      "content_type": 22,
+      "codename": "delete_orderitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+      "name": "Can view order item",
+      "content_type": 22,
+      "codename": "view_orderitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+      "name": "Can add email address",
+      "content_type": 23,
+      "codename": "add_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+      "name": "Can change email address",
+      "content_type": 23,
+      "codename": "change_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+      "name": "Can delete email address",
+      "content_type": 23,
+      "codename": "delete_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+      "name": "Can view email address",
+      "content_type": 23,
+      "codename": "view_emailaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 93,
+    "fields": {
+      "name": "Can add email confirmation",
+      "content_type": 24,
+      "codename": "add_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 94,
+    "fields": {
+      "name": "Can change email confirmation",
+      "content_type": 24,
+      "codename": "change_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 95,
+    "fields": {
+      "name": "Can delete email confirmation",
+      "content_type": 24,
+      "codename": "delete_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 96,
+    "fields": {
+      "name": "Can view email confirmation",
+      "content_type": 24,
+      "codename": "view_emailconfirmation"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 97,
+    "fields": {
+      "name": "Can add pack of course hours",
+      "content_type": 25,
+      "codename": "add_packofcoursehours"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 98,
+    "fields": {
+      "name": "Can change pack of course hours",
+      "content_type": 25,
+      "codename": "change_packofcoursehours"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 99,
+    "fields": {
+      "name": "Can delete pack of course hours",
+      "content_type": 25,
+      "codename": "delete_packofcoursehours"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 100,
+    "fields": {
+      "name": "Can view pack of course hours",
+      "content_type": 25,
+      "codename": "view_packofcoursehours"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 101,
+    "fields": {
+      "name": "Can add lessons taken",
+      "content_type": 26,
+      "codename": "add_lessonstaken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 102,
+    "fields": {
+      "name": "Can change lessons taken",
+      "content_type": 26,
+      "codename": "change_lessonstaken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 103,
+    "fields": {
+      "name": "Can delete lessons taken",
+      "content_type": 26,
+      "codename": "delete_lessonstaken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 104,
+    "fields": {
+      "name": "Can view lessons taken",
+      "content_type": 26,
+      "codename": "view_lessonstaken"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 105,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 27,
+      "codename": "add_customuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 106,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 27,
+      "codename": "change_customuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 107,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 27,
+      "codename": "delete_customuser"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 108,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 27,
+      "codename": "view_customuser"
+    }
+  },
+  {
+    "model": "drivingschool.bar",
+    "pk": 1,
+    "fields": {
+      "name": "1er étage"
+    }
+  },
+  {
+    "model": "drivingschool.bar",
+    "pk": 2,
+    "fields": {
+      "name": "2ème étage"
+    }
+  },
+  {
+    "model": "drivingschool.bar",
+    "pk": 3,
+    "fields": {
+      "name": "3ème étage"
+    }
+  },
+  {
+    "model": "drivingschool.bar",
+    "pk": 4,
+    "fields": {
+      "name": "rooftop"
+    }
+  },
+  {
+    "model": "drivingschool.bar",
+    "pk": 5,
+    "fields": {
+      "name": "skyscrapper"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 1,
+    "fields": {
+      "ref": "007",
+      "name": "007",
+      "description": "Light and hoppy."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 2,
+    "fields": {
+      "ref": "100",
+      "name": "100",
+      "description": "A super smooth ruby ale. Traditional in its design and delicious in its execution. Dark fruit flavours and a bitterness of 6/10 leave you with a spicy finish and a moreish mouth feel. A very popular ale with its depth of flavour. Roasted barely adds colour and no less than five hops added in three stages give complexity."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 3,
+    "fields": {
+      "ref": "101",
+      "name": "101",
+      "description": "A Brew to clebrate our 101st year of brewing - Dark smooth roasted Malts creating a depth of flavours with a combination of whole leaf  Duo of Green Bullet & Willamette hops to give an exciting clean fruity Hoppiness that will leave you wanting more."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 4,
+    "fields": {
+      "ref": "1049_Dead",
+      "name": "1049 Dead",
+      "description": "A dark fruity vibrant Mild. The selection of malts and English hops produce a fruity chocolate taste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 5,
+    "fields": {
+      "ref": "1049_Grey",
+      "name": "1049 Grey",
+      "description": "A variation on our regular Mild with the addition of Earl Grey tea to provide a subtle hint of Bergamot."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 6,
+    "fields": {
+      "ref": "1066",
+      "name": "1066",
+      "description": "A traditional country bitter recipe, hoppy with a fruity, bitter finish."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 7,
+    "fields": {
+      "ref": "1066",
+      "name": "1066",
+      "description": "A classic, strong English pale ale with a powerful combination of warmth, strength and a subtle hop aroma. A light colour and clean palate give an unusual quality to a beer of this strength."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 8,
+    "fields": {
+      "ref": "1077_Anniversary_Ale",
+      "name": "1077 Anniversary Ale",
+      "description": "Warm copper colour with a vibrant fruit aroma and taste. A full flavoured classic bitter."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 9,
+    "fields": {
+      "ref": "11_Knights_in_Brazil",
+      "name": "11 Knights in Brazil",
+      "description": "Classic British bitter"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 10,
+    "fields": {
+      "ref": "1767_Founders_Ale",
+      "name": "1767 Founders Ale",
+      "description": "A classic premium ale. Distinctive, rich and full-bodied with a fruity, dry hop, spicy finish."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 11,
+    "fields": {
+      "ref": "1832_Cuckold_Alley_Ale",
+      "name": "1832 Cuckold Alley Ale",
+      "description": "Well-hopped and so very refreshing, this is an immensely drinkable premium bitter with a marked estery aroma and distinctive roasted malt flavours."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 12,
+    "fields": {
+      "ref": "1849",
+      "name": "1849",
+      "description": "A complex blend of choice coloured malts and English Ale Malt balanced by Invert Sugar and Golding Hops. A darker more traditional ale with a very distinct taste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 13,
+    "fields": {
+      "ref": "1872_Porter",
+      "name": "1872 Porter",
+      "description": "Rich, complex and dark porter from an original 1872 recipe, with an old port nose, and coffee and bitter chocolate flavours on the palate.  The ideal beer for chilly Autumn evenings and winter nights. Champion Beer of Great Britain 2013."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 14,
+    "fields": {
+      "ref": "1880_Ale",
+      "name": "1880 Ale",
+      "description": "A light golden ale made with 100% U.K pale and lager malts, seasoned with top quality German lager hops , and the addition of romas hops from Germany and France."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 15,
+    "fields": {
+      "ref": "1910_Porter",
+      "name": "1910 Porter",
+      "description": "Six different malts give a depth to this beer, which is hopped at five stages of the brewing process to allow the character of the noble hop varieties to shine through."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 16,
+    "fields": {
+      "ref": "1911_Celebration_Ale",
+      "name": "1911 Celebration Ale",
+      "description": "A claret coloured beer with a flavour of malt biscuit accompanied by apple undertones derived from the late addition of hops and a generous helping of dark crystal malt."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 17,
+    "fields": {
+      "ref": "1st_Lite",
+      "name": "1st Lite",
+      "description": "A pale bitter with grapefruit and citrus tones and a ‘stay in the mouth’ after taste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 18,
+    "fields": {
+      "ref": "2008",
+      "name": "2008",
+      "description": "Brewed to celebrate Liverpool's 'City of Culture' status. A full, clean and refreshing pale coloured bitter with an abundance of citrus hop character created by the blend of dry and late hopping techniques. It also has subtle hints of malt and fruit on the aroma and  palate which gives the beer a well rounded balance."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 19,
+    "fields": {
+      "ref": "2010_-_A_Beer_Odyssey",
+      "name": "2010 - A Beer Odyssey",
+      "description": "A blend of the finest malts and three varieties of hops, Challenger, Bobek and Cluster, give this mid brown ale a smooth malty taste with a subtle floral finish."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 20,
+    "fields": {
+      "ref": "2012",
+      "name": "2012",
+      "description": "Golden."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 21,
+    "fields": {
+      "ref": "21st_Anniversary",
+      "name": "21st Anniversary",
+      "description": "This brown beer has caramel and chocolate overtones together with fruity taste and aromas."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 22,
+    "fields": {
+      "ref": "22",
+      "name": "22",
+      "description": "A wonderfully balanced best bitter with good malty flavour and dark fruit notes, these are offset by a strong hop with a very clean finish. A great thirst quenching beer for any time of the day."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 23,
+    "fields": {
+      "ref": "24_Carrot",
+      "name": "24 Carrot",
+      "description": "Smooth aromas of citrus and blackberry with a spicy and cosy blanket of malt flavoured hoppiness."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 24,
+    "fields": {
+      "ref": "24_Carrot",
+      "name": "24 Carrot",
+      "description": "Pale Gold coloured ,  Fruity, Floral, Citrus aromas, with  Malty, Lemon, Blackcurrant flavours"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 25,
+    "fields": {
+      "ref": "25_[Anniversary_Ale]",
+      "name": "25 [Anniversary Ale]",
+      "description": "An explosion of flavours originating from American Cascade hops gives this brilliant pale golden beer a fresh aroma and fruit filled finish. Originally brewed to celebrate the brewery's 25th Anniversary in June 2004."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 26,
+    "fields": {
+      "ref": "25th_Anniversary_Ale",
+      "name": "25th Anniversary Ale",
+      "description": "Brewed for Ballard’s  25th anniversary in July 2005, 25th Anniversary Ale contains all the malts;  pale ale, crystal and chocolate, and all the hops;  fuggles, geldings and phoenix, which are regularly used in all our brews. The tawny golden beer has a rich and delicious complexity of aromas and flavours."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 27,
+    "fields": {
+      "ref": "25th_Birthday_Celebration_Ale",
+      "name": "25th Birthday Celebration Ale",
+      "description": "A light blonde ale with English Pioneer, Slovenian Styrian Golding and American Chinook hops give a heady combination of citrusy flavours and a light spicy finish. A real thirst quencher!"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 28,
+    "fields": {
+      "ref": "2B's",
+      "name": "2B's",
+      "description": "Light brown coloured, with a crisp refreshing aftertaste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 29,
+    "fields": {
+      "ref": "2XS",
+      "name": "2XS",
+      "description": "A full flavoured, reddish beer with a strong fruity, hoppy aroma."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 30,
+    "fields": {
+      "ref": "3_/_6",
+      "name": "3 / 6 ",
+      "description": "Light copper colour, peppery spice and full on bitterness, good session beer."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 31,
+    "fields": {
+      "ref": "3_Score",
+      "name": "3 Score",
+      "description": "An amber beer with a malty taste, fruity tang and long, raisin aftertaste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 32,
+    "fields": {
+      "ref": "3_Squared",
+      "name": "3 Squared",
+      "description": "A complex and sophisticated IPA, using a trio of assertive American hops. It gets its name from being hopped in three stages of the brewing process, with each addition using three types of hop. Aromas of resinous pine, orange and just the right level of citrussiness that you'd expect of a modern IPA.  A dry finish and moderate bitterness make this deceptively quaffable!"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 33,
+    "fields": {
+      "ref": "303_AD",
+      "name": "303 AD",
+      "description": "English Malt and English Hops combine to make a robust English beer. Dry and crisp with a hint of citrus."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 34,
+    "fields": {
+      "ref": "3B's",
+      "name": "3B's",
+      "description": "A superb amber brew with distinctive taste and a full nutty malt flavour beneath the hops."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 35,
+    "fields": {
+      "ref": "3point8_Lager",
+      "name": "3point8 Lager",
+      "description": "It has a beautiful pale colour with a clean, crisp refreshing taste – great for quenching thirst, especially on those sunny summer days!"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 36,
+    "fields": {
+      "ref": "4_a'that",
+      "name": "4 a'that",
+      "description": "A dark amber, three hop beer with rich malt and fragrant Cascade hop characteristics,"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 37,
+    "fields": {
+      "ref": "44_Special",
+      "name": "44 Special",
+      "description": "A tawny coloured, full-bodied, smooth beer that is rich and sweet with the aroma of ripe hops and fruits."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 38,
+    "fields": {
+      "ref": "60_/-",
+      "name": "60 /-",
+      "description": "A dark malty beer with a refreshing hint of roast barley. A session beer for the discerning volume drinker."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 39,
+    "fields": {
+      "ref": "60/-",
+      "name": "60/-",
+      "description": "A dark nutty mild"
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 40,
+    "fields": {
+      "ref": "65_Mild_Brown_Ale",
+      "name": "65 Mild Brown Ale",
+      "description": "Malty Hazelnut Chocolate Mild with a hint of dark cherry."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 41,
+    "fields": {
+      "ref": "70_/-",
+      "name": "70 /-",
+      "description": "Tawny coloured with creamy quenching flavour, where malted barley flavours are well balanced with a delicate hop aroma."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 42,
+    "fields": {
+      "ref": "80_/-",
+      "name": "80 /-",
+      "description": "A malty copper coloured beer with hop and fruit. It has a superb creamy head and polished clarity. A classic 80/- Ale. Crystal and roasted malt are combined with wheat to give a full roasted malty flavour. The hops give a sweet floral fruity nose and subtle bitterness."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 43,
+    "fields": {
+      "ref": "92_Squadron",
+      "name": "92 Squadron",
+      "description": "A copper-hued premium best bitter, Brewed with a blend of hops from both the UK & USA for a refreshing hoppy finish."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 44,
+    "fields": {
+      "ref": "99_Red_Baboons",
+      "name": "99 Red Baboons",
+      "description": "An unusual combination of fruity hoppyness with a dark, malty side.  Very dark in colour with reddish hue, and brewed with Pilgrim, Celeia, Amarillo hops."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 45,
+    "fields": {
+      "ref": "A_Bitter_tale",
+      "name": "A Bitter tale",
+      "description": "A traditional English bitter heavily hopped with Fuggles And Goldings hops."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 46,
+    "fields": {
+      "ref": "A_Drop_of_Nelsons_Blood",
+      "name": "A Drop of Nelsons Blood",
+      "description": "An easy drinking but flavourful bitter originally brewed for Trafalgar Day. After the battle, Nelson’s body was returned to England preserved in a barrel of brandy. It is said that the sailors on the Victory drank some of the brandy as part of their grog ration, which became known as Nelson’s Blood. Every glass contains a drop of brandy."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 47,
+    "fields": {
+      "ref": "A_over_T",
+      "name": "A over T",
+      "description": "Aromas over Tongham - Deep tawny colour, complex and powerful yet well balanced with fruity notes, and hints of chocolate & raisins. A distinctive ale from the 'Barley Wine' stable."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 48,
+    "fields": {
+      "ref": "A_pint_of_the_Ewe-sual",
+      "name": "A pint of the Ewe-sual",
+      "description": "Light amber in colour. Well balanced with a gentle citrus aroma, a distinctive bitterness and a touch of spiciness."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 49,
+    "fields": {
+      "ref": "A_Pinta_Bitter",
+      "name": "A Pinta Bitter",
+      "description": "A rich mahogany coloured beer with bags of malt flavour balanced by a fruity hop aftertaste."
+    }
+  },
+  {
+    "model": "drivingschool.reference",
+    "pk": 50,
+    "fields": {
+      "ref": "A_Rye_Smile",
+      "name": "A Rye Smile",
+      "description": "Brand new lager style beer using a variety of Crystal Rye Malt. Pale strong and thirst quenching."
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 1,
+    "fields": {
+      "stock": 35,
+      "bar": 4,
+      "reference": 1
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 2,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 2
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 3,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 3
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 4,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 4
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 5,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 5
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 6,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 6
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 7,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 7
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 8,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 8
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 9,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 9
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 10,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 10
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 11,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 11
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 12,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 12
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 13,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 13
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 14,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 14
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 15,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 15
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 16,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 16
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 17,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 17
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 18,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 18
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 19,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 19
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 20,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 20
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 21,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 21
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 22,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 22
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 23,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 23
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 24,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 24
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 25,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 25
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 26,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 26
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 27,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 27
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 28,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 28
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 29,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 29
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 30,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 30
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 31,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 31
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 32,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 32
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 33,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 33
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 34,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 34
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 35,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 35
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 36,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 36
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 37,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 37
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 38,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 38
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 39,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 39
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 40,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 40
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 41,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 41
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 42,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 42
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 43,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 43
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 44,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 44
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 45,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 45
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 46,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 46
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 47,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 47
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 48,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 48
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 49,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 49
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 50,
+    "fields": {
+      "stock": 400,
+      "bar": 4,
+      "reference": 50
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 55,
+    "fields": {
+      "stock": 5,
+      "bar": 1,
+      "reference": 6
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 66,
+    "fields": {
+      "stock": 5,
+      "bar": 1,
+      "reference": 12
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 70,
+    "fields": {
+      "stock": 5,
+      "bar": 1,
+      "reference": 2
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 76,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 34
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 77,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 6
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 78,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 16
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 79,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 17
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 80,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 33
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 81,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 29
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 82,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 41
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 83,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 44
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 84,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 41
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 85,
+    "fields": {
+      "stock": 200,
+      "bar": 2,
+      "reference": 11
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 86,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 43
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 87,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 10
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 88,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 14
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 89,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 22
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 90,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 28
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 91,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 35
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 92,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 9
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 93,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 11
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 94,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 26
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 95,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 30
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 96,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 39
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 97,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 3
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 98,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 4
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 99,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 36
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 100,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 37
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 101,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 27
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 102,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 49
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 103,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 47
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 104,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 44
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 105,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 8
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 106,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 1
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 107,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 50
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 108,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 17
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 109,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 21
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 110,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 38
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 111,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 40
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 112,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 32
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 113,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 12
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 114,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 41
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 115,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 24
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 116,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 20
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 117,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 15
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 118,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 2
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 119,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 48
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 120,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 6
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 121,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 16
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 122,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 19
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 123,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 45
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 124,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 46
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 125,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 42
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 126,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 31
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 127,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 23
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 128,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 7
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 129,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 34
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 130,
+    "fields": {
+      "stock": 300,
+      "bar": 3,
+      "reference": 18
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 131,
+    "fields": {
+      "stock": 0,
+      "bar": 1,
+      "reference": 35
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 132,
+    "fields": {
+      "stock": 4,
+      "bar": 1,
+      "reference": 40
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 133,
+    "fields": {
+      "stock": 4,
+      "bar": 1,
+      "reference": 30
+    }
+  },
+  {
+    "model": "drivingschool.order",
+    "pk": 1,
+    "fields": {
+      "order_date": "2022-10-02T17:08:32Z"
+    }
+  },
+  {
+    "model": "drivingschool.order",
+    "pk": 2,
+    "fields": {
+      "order_date": "2022-10-02T17:14:26.742Z"
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 1,
+    "fields": {
+      "bar": 1,
+      "order": 1,
+      "reference": 1,
+      "count": 2
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 3,
+    "fields": {
+      "bar": 1,
+      "order": 1,
+      "reference": 2,
+      "count": 1
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 4,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 30,
+      "count": 3
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 5,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 35,
+      "count": 2
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 6,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 40,
+      "count": 1
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 7,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 30,
+      "count": 3
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 8,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 35,
+      "count": 2
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 9,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 40,
+      "count": 1
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 10,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 30,
+      "count": 3
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 11,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 35,
+      "count": 2
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 12,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 40,
+      "count": 1
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 13,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 30,
+      "count": 3
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 14,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 35,
+      "count": 2
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 15,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 40,
+      "count": 1
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 16,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 30,
+      "count": 3
+    }
+  },
+  {
+    "model": "drivingschool.orderitem",
+    "pk": 17,
+    "fields": {
+      "bar": 2,
+      "order": 1,
+      "reference": 35,
+      "count": 3
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "authgroup"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "authgrouppermissions"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "authpermission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "authuser"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "authusergroups"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "authuseruserpermissions"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "djangoadminlog"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "djangocontenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "djangomigrations"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "djangosession"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "bar"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "order"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "reference"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "viewstock"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "stock"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "orderitem"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+      "app_label": "account",
+      "model": "emailaddress"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 24,
+    "fields": {
+      "app_label": "account",
+      "model": "emailconfirmation"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 25,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "packofcoursehours"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 26,
+    "fields": {
+      "app_label": "drivingschool",
+      "model": "lessonstaken"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 27,
+    "fields": {
+      "app_label": "accounts",
+      "model": "customuser"
+    }
+  }
+]

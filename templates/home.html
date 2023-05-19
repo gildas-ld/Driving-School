@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %}Home{% endblock title %}
 {% block content %}
-<div class="col-md-6 col-lg-6 order-lg-1 d-md-flex flex-column justify-content-center">
+<div class="order-lg-1 d-md-flex flex-column justify-content-center">
   <div>
     <h1>Leçons de conduite à Paris</h1>
 
@@ -17,60 +17,77 @@
       <div>Appelez-nous maintenant ou réservez en ligne 24/7</div>
       <div class="telephone"><i class="fa-solid fa-phone"></i> <a href="tel:+33144626215  ">+33144626215</a> </div>
     </div>
-    <div>
-      <div
-        class="item"
+    <div class="d-flex flex-wrap">
+
+      <img
+        class="item rounded m-auto d-block bookcover"
         data-aos="fade-up"
-      >1</div>
-      <div
-        class="item"
+        src="{% static 'images/home/1.webp' %}"
+      >
+      <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/2.webp' %}"
+        data-aos="fade-up"
+      >
+      <!-- <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/3.webp' %}"
         data-aos="fade-down"
-      >2</div>
-      <div
-        class="item"
+      >
+      <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/4.webp' %}"
         data-aos="fade-right"
-      >3</div>
-      <div
-        class="item"
+      >
+      <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/5.webp' %}"
         data-aos="fade-left"
-      >4</div>
+      >
 
-      <div
-        class="item"
+      <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/6.webp' %}"
         data-aos="zoom-in"
-      >5</div>
-      <div
-        class="item"
+      >
+      <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/1.webp' %}"
         data-aos="zoom-out"
-      >6</div>
+      > -->
 
-      <div
-        class="item"
+      <!-- <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/2.webp' %}"
         data-aos="slide-up"
-      >7</div>
+      >
 
-      <div
-        class="item"
+      <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/3.webp' %}"
         data-aos="flip-up"
-      >8</div>
-      <div
-        class="item"
+      >
+      <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/4.webp' %}"
         data-aos="flip-down"
-      >9</div>
-      <div
-        class="item"
+      >
+      <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/5.webp' %}"
         data-aos="flip-right"
-      >10</div>
-      <div
-        class="item"
+      >
+      <img
+        class="item rounded m-auto d-block bookcover"
+        src="{% static 'images/home/6.webp' %}"
         data-aos="flip-left"
-      >11</div>
+      > -->
 
     </div>
   </div>
 </div>
-<img
+<!-- <img
   class="bookcover"
   src="{% static 'images/driving_school.png' %}"
->
+> -->
 {% endblock content %}

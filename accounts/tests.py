@@ -27,7 +27,7 @@ class CustomUserTests(TestCase):
         self.assertTrue(admin_user.is_superuser)
 
 
-class SignupPageTests(TestCase):  # new
+class SignupPageTests(TestCase):
     username = "newuser"
     email = "newuser@email.com"
 

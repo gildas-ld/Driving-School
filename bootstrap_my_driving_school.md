@@ -8,12 +8,11 @@ build tool : no need here
 ```
 
 - The totality of your source files, except all useless files (binary, temp files, obj
-    files,...), must be included in your delivery.
+  files,...), must be included in your delivery.
 - All the bonus files (including a potential specific Makefile) should be in a directory
-    named _bonus_.
+  named _bonus_.
 - Error messages have to be written on the error output, and the program should
-    then exit with the 84 error code (0 if there is no error).
-
+  then exit with the 84 error code (0 if there is no error).
 
 ## Introduction
 
@@ -27,7 +26,6 @@ une authentification avec django et avec une base de donnee SQLite.
 - Routes
 - Création d’une authentification
 
-
 ## Projet
 
 Dans ce bootstrap vous allez apprendre a vous servir d’une base de donnee SQLite afin de recoder une
@@ -39,6 +37,7 @@ https://www.djangoproject.com/download/ pour le framework django
 ```
 Tout ce dont vous avez besoin ce trouve sur la documentation de django!
 ```
+
 Le premier point important est de setup tout l’environement
 
 - créer un dossier bootstrap qui va etre le dossier dans lequel on va coder
@@ -52,7 +51,6 @@ Ensuite, il faudra créer notre page login (HTML, template) ainsi que créer not
 spondantes: Route1, Route2. Vous trouverez toutes les information necessaire sur la documentation django.
 Il vous faudra créer des users avec manage superuser afin d’avoir le systeme d’aministration.
 
-
 Voici les commandes a lancer dans le dépot pour initialiser votre projet :
 
 ### ∇ Terminal - + x
@@ -65,6 +63,7 @@ my_project.
 ∼/W-WEB-350> (bootstrap_python_my_driving_school) python manage.py migrate
 ∼/W-WEB-350> (bootstrap_python_my_driving_school) python manage.py runserver
 ```
+
 ## Liens Utiles!
 
 Regarder ces tutoriel, ils vous permettent de realiser une base de projet! :
@@ -72,6 +71,3 @@ Regarder ces tutoriel, ils vous permettent de realiser une base de projet! :
 - Login / logout avec django
 - Inscription en bdd
 - Vidéo intéressante
-
-
-

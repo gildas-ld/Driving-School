@@ -1,41 +1,33 @@
 * {
   box-sizing: border-box;
 }
-
 .item {
   max-width: 100%;
   height: auto;
 }
-
 body {
   min-height: 75rem;
   padding-top: 4.5rem;
 }
-
 img.bookcover {
   height: 300px;
   width: auto;
 }
-
 .text-light {
-  color: rgba(255, 255, 255, 0.5490196078) !important;
+  color: #ffffff8c !important;
+  &:hover {
+    color: #212529 !important;
+  }
 }
-.text-light:hover {
-  color: #212529 !important;
-}
-
 .dropdown-menu {
   border: none !important;
 }
-
 ul {
   border: none !important;
 }
-
 li {
   border: none !important;
 }
-
 .dropdown-divider {
   border: none !important;
-} /*# sourceMappingURL=base.css.map */
+}
