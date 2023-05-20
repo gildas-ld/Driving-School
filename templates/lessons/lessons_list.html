@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+{% block title %}
+  Lessons
+{% endblock title %}
+{% block content %}
+  <form class="row g-2" action="{% url 'add_lessons' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+      <select class="form-select" aria-label="Select lessons" id="lessons" required>
+        <option selected>Selectionner des heures</option>
+        {% for lesson in lessons_list %}
+          <option id="lesson-{{ lesson.id }}"
+                  onclick="addToCart(this.id)"
+                  value="lesson-{{ lesson.id }}">{{ lesson.title }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-12">
+      <input class="btn btn-dark" type="submit" value=Submit>
+    </div>
+  </form>
+{% endblock content %}

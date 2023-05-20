@@ -34,11 +34,13 @@ api_urlpatterns = [
     path("auth/register/", RegisterView.as_view(), name="auth_register"),
 ]
 urlpatterns = [
-    path("__debug__/", include(debug_toolbar.urls)),
-    path("", include("pages.urls")),
     # User management
     path("accounts/", include("allauth.urls")),
+    # Local apps
+    path("", include("pages.urls")),
+    # path("lessons/", include("lessons.urls")),
     # re_path(r"^home/", HomePageView.as_view(), name="home"),
+    re_path(r"^lessons/", include("lessons.urls")),
     re_path(r"^admin/", admin.site.urls),
     re_path(r"^api/", include(api_urlpatterns)),
     re_path(r"^api-auth/", include("rest_framework.urls", namespace="rest_framework")),
@@ -54,3 +56,9 @@ urlpatterns = [
         name="redoc",
     ),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+    import debug_toolbar
+
+    urlpatterns = [
+        path("__debug__/", include(debug_toolbar.urls)),
+    ] + urlpatterns

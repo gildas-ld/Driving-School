@@ -13,6 +13,8 @@ from rest_framework.permissions import (
 from rest_framework.response import Response
 
 from drivingschool.models import Bar, Order, Reference, Stock
+from django.db.models import Q
+from django.views.generic import ListView, DetailView
 from drivingschool.serializers import (
     BarSerializer,
     OrderSerializer,

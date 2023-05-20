@@ -1,7 +1,9 @@
 {% extends "account/email/base_message.txt" %}
 {% load account %}
 {% load i18n %}
-
-{% block content %}{% autoescape off %}{% user_display user as user_display %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}You are receiving this e-mail because user {{ user_display }} has given your e-mail address to register an account on {{ site_domain }}.
-
-To confirm this is correct, go to {{ activate_url }}{% endblocktrans %}{% endautoescape %}{% endblock %}
+{% block content %}
+  {% autoescape off %}
+    {% user_display user as user_display %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Vous recevez cet e-mail parce que l'utilisateur {{ user_display }} a donné son adresse e-mail pour créer un compte sur {{ site_domain }}.
+Pour confirmer l'exactitude de ces informations, rendez-vous à l'adresse suivante {{ activate_url }}{% endblocktrans %}
+  {% endautoescape %}
+{% endblock content %}

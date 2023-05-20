@@ -1,9 +1,9 @@
 [
   {
-    "model": "auth.user",
+    "model": "accounts.customuser",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$390000$LOSPmRkwrcKZxI52sr9PzB$SASm/0X7gI4SCYrM3ZxK1b1Raxc6zIeGpjBXFZU/krw=",
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
       "last_login": "2022-10-02T16:14:17.418Z",
       "is_superuser": true,
       "username": "gildas",
@@ -13,15 +13,17 @@
       "is_staff": true,
       "is_active": true,
       "date_joined": "2022-09-26T14:51:26Z",
-      "groups": [1],
+      "groups": [
+        1
+      ],
       "user_permissions": []
     }
   },
   {
-    "model": "auth.user",
+    "model": "accounts.customuser",
     "pk": 2,
     "fields": {
-      "password": "pbkdf2_sha256$390000$LOSPmRkwrcKZxI52sr9PzB$SASm/0X7gI4SCYrM3ZxK1b1Raxc6zIeGpjBXFZU/krw=",
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
       "last_login": "2022-09-30T14:34:26.064Z",
       "is_superuser": false,
       "username": "antoine",
@@ -31,15 +33,17 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-09-30T14:36:49Z",
-      "groups": [1],
+      "groups": [
+        1
+      ],
       "user_permissions": []
     }
   },
   {
-    "model": "auth.user",
+    "model": "accounts.customuser",
     "pk": 3,
     "fields": {
-      "password": "pbkdf2_sha256$390000$LOSPmRkwrcKZxI52sr9PzB$SASm/0X7gI4SCYrM3ZxK1b1Raxc6zIeGpjBXFZU/krw=",
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
       "last_login": "2022-10-02T15:45:58Z",
       "is_superuser": false,
       "username": "apprentice",
@@ -49,6 +53,24 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-10-01T14:17:12Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "accounts.customuser",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2023-05-29T15:23:10.013Z",
+      "is_superuser": false,
+      "username": "test_student",
+      "first_name": "Igor",
+      "last_name": "Ortega",
+      "email": "test@epitech.eu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-05-29T15:21:51Z",
       "groups": [],
       "user_permissions": []
     }

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "drivingschool.apps.DrivingSchoolConfig",
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
+    "lessons.apps.LessonsConfig",
 ]
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),

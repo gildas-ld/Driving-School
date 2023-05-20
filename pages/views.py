@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView
+from django.views.generic import ListView, DetailView
 
 
 class HomePageView(TemplateView):
@@ -7,7 +8,3 @@ class HomePageView(TemplateView):
 
 class AboutPageView(TemplateView):
     template_name = "about.html"
-
-
-class LessonsPageView(TemplateView):
-    template_name = "lessons.html"

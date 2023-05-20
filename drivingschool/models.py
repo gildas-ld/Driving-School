@@ -47,20 +47,3 @@ class Stock(models.Model):
 
     class Meta:
         ordering = ["id"]
-
-
-class PackOfCourseHours(models.Model):
-    name = models.TextField(blank=True, null=True)
-    price = models.FloatField(blank=True, null=True)
-    number_of_hours = models.IntegerField(blank=True, null=True)
-
-
-class LessonsTaken(models.Model):
-    customuser = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-    )
-    date = models.DateTimeField()
-    effective = models.BooleanField(blank=True, null=True)
-    duration = models.FloatField(blank=True, null=True)
-    commentary = models.TextField(blank=True, null=True)

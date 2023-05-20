@@ -1,14 +1,12 @@
 {% extends "_base.html" %}
 {% load crispy_forms_tags %}
-
-{% block title %}Log Out{% endblock %}
-
+{% block title %}Se déconnecter{% endblock title %}
 {% block content %}
-  <h1>Log Out</h1>
-  <p>Are you sure you want to log out?</p>
+  <h1>Se déconnecter</h1>
+  <p>Êtes-vous sûr de vouloir vous déconnecter ?</p>
   <form method="post" action="{% url 'account_logout' %}">
     {% csrf_token %}
     {{ form|crispy }}
-    <button class="btn btn-danger" type="submit">Log Out</button>
+    <button class="btn btn-danger" type="submit">Se déconnecter</button>
   </form>
 {% endblock content %}

@@ -1,0 +1,46 @@
+[
+  {
+    "model": "lessons.lesson",
+    "pk": 1,
+    "fields": {
+      "name": "1h",
+      "title": "1h de cours",
+      "text": "1h de conduite effective, qui permet au candidat de se perfectionner dans la maîtrise du maniement du véhicule.",
+      "price": "10.00",
+      "cover": "/cover_1h.png"
+    }
+  },
+  {
+    "model": "lessons.lesson",
+    "pk": 2,
+    "fields": {
+      "name": "2h",
+      "title": "2h de cours",
+      "text": "2h de conduite effective, qui permet au candidat de se perfectionner dans la maîtrise du maniement du véhicule.",
+      "price": "20.00",
+      "cover": "/cover_2h.png"
+    }
+  },
+  {
+    "model": "lessons.lesson",
+    "pk": 3,
+    "fields": {
+      "name": "3h",
+      "title": "3h de cours",
+      "text": "3h de conduite effective, qui permet au candidat de se perfectionner dans la maîtrise du maniement du véhicule.",
+      "price": "30.00",
+      "cover": "/cover_3h.png"
+    }
+  },
+  {
+    "model": "lessons.lesson",
+    "pk": 4,
+    "fields": {
+      "name": "5h",
+      "title": "5h de cours",
+      "text": "5h de conduite effective, qui permet au candidat de se perfectionner dans la maîtrise du maniement du véhicule.",
+      "price": "40.00",
+      "cover": "/cover_5h.png"
+    }
+  }
+]

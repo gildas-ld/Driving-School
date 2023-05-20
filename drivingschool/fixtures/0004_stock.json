@@ -3,7 +3,7 @@
     "model": "drivingschool.stock",
     "pk": 1,
     "fields": {
-      "stock": 400,
+      "stock": 35,
       "bar": 4,
       "reference": 1
     }
@@ -462,7 +462,7 @@
     "model": "drivingschool.stock",
     "pk": 66,
     "fields": {
-      "stock": 0,
+      "stock": 5,
       "bar": 1,
       "reference": 12
     }
@@ -471,7 +471,7 @@
     "model": "drivingschool.stock",
     "pk": 70,
     "fields": {
-      "stock": 1,
+      "stock": 5,
       "bar": 1,
       "reference": 2
     }
@@ -969,6 +969,24 @@
       "stock": 300,
       "bar": 3,
       "reference": 18
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 131,
+    "fields": {
+      "stock": 0,
+      "bar": 1,
+      "reference": 35
+    }
+  },
+  {
+    "model": "drivingschool.stock",
+    "pk": 132,
+    "fields": {
+      "stock": 4,
+      "bar": 1,
+      "reference": 40
     }
   }
 ]
