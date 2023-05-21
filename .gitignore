@@ -1,5 +1,6 @@
 !.gitignore
 !.travis.yml
+!./clean-database.sql
 *$py.class
 *.cover
 *.egg

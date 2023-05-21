@@ -1,0 +1,29 @@
+[
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "user_type": "Student",
+      "remaining_hours": 5
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 2,
+    "fields": {
+      "user": 5,
+      "user_type": "Instructor",
+      "remaining_hours": 0
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 3,
+    "fields": {
+      "user": 6,
+      "user_type": "Instructor",
+      "remaining_hours": 0
+    }
+  }
+]

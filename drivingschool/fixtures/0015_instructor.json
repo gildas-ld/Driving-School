@@ -1,0 +1,16 @@
+[
+  {
+    "model": "drivingschool.instructor",
+    "pk": 1,
+    "fields": {
+      "user": 2
+    }
+  },
+  {
+    "model": "drivingschool.instructor",
+    "pk": 2,
+    "fields": {
+      "user": 3
+    }
+  }
+]

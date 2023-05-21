@@ -1,0 +1,10 @@
+[
+  {
+    "model": "drivingschool.student",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "packages": []
+    }
+  }
+]

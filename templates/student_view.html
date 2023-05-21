@@ -1,0 +1,12 @@
+{% extends 'base_generic.html' %}
+{% block content %}
+    <h2>Student View</h2>
+    <ul class="list-group">
+        {% for appointment in object_list %}
+            <li class="list-group-item">
+                {{ appointment.date_time }} - {{ appointment.location }}
+                with {{ appointment.instructor.user.username }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

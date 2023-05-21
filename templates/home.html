@@ -1,47 +1,69 @@
 {% extends "_base.html" %}
 {% load static %}
 {% block title %}
-  Home
+    Home
 {% endblock title %}
 {% block content %}
-  <div class="order-lg-1 d-md-flex flex-column justify-content-center">
-    <div>
-      <h1>Leçons de conduite à Paris</h1>
-      <p>
-        <p>
-          Il est essentiel de savoir conduire, que ce soit pour des raisons pratiques, comme aller chercher les enfants à
-          l'école,
-          ou pour s'amuser, comme planifier un voyage à l'étranger. Si vous devez conduire pour le travail ou si vous voulez
-          simplement conduire pour le plaisir, le permis de conduire peut être votre ticket pour le plaisir, la liberté et
-          l'indépendance.
-        </p>
-      </p>
-      <div>
-        <div>Appelez-nous maintenant ou réservez en ligne 24/7</div>
-        <div class="telephone">
-          <i class="fa-solid fa-phone"></i> <a href="tel:+33144626215  ">+33144626215</a>
+    <div class="order-lg-1 d-md-flex flex-column justify-content-center">
+        <div>
+            <h1>Leçons de conduite à Paris</h1>
+            <p>
+                <p>
+                    Il est essentiel de savoir conduire, que ce soit pour des raisons pratiques, comme aller chercher les
+                    enfants à
+                    l'école,
+                    ou pour s'amuser, comme planifier un voyage à l'étranger. Si vous devez conduire pour le travail ou si
+                    vous voulez
+                    simplement conduire pour le plaisir, le permis de conduire peut être votre ticket pour le plaisir, la
+                    liberté et
+                    l'indépendance.
+                </p>
+            </p>
+            <div>
+                <div>Appelez-nous maintenant ou réservez en ligne 24/7</div>
+                <div class="telephone">
+                    <i class="fa-solid fa-phone"></i> <a href="tel:+33144626215  ">+33144626215</a>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     data-aos="fade-up"
+                     src="{% static 'images/home/1.webp' %}">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/2.webp' %}"
+                     data-aos="fade-up">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/3.webp' %}"
+                     data-aos="fade-down">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/4.webp' %}"
+                     data-aos="fade-right">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/5.webp' %}"
+                     data-aos="fade-left">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/6.webp' %}"
+                     data-aos="zoom-in">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/1.webp' %}"
+                     data-aos="zoom-out">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/2.webp' %}"
+                     data-aos="slide-up">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/3.webp' %}"
+                     data-aos="flip-up">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/4.webp' %}"
+                     data-aos="flip-down">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/5.webp' %}"
+                     data-aos="flip-right">
+                <img class="item rounded m-auto p-2 d-block bookcover"
+                     src="{% static 'images/home/6.webp' %}"
+                     data-aos="flip-left">
+            </div>
         </div>
-      </div>
-      <div class="d-flex flex-wrap">
-        <img class="item rounded m-auto d-block bookcover"
-             data-aos="fade-up"
-             src="{% static 'images/home/1.webp' %}">
-        <img class="item rounded m-auto d-block bookcover"
-             src="{% static 'images/home/2.webp' %}"
-             data-aos="fade-up">
-        <!-- <img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/3.webp' %}" data-aos="fade-down">
-      <img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/4.webp' %}" data-aos="fade-right">
-      <img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/5.webp' %}" data-aos="fade-left">
-
-      <img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/6.webp' %}" data-aos="zoom-in">
-<img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/1.webp' %}" data-aos="zoom-out"> -->
-        <!-- <img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/2.webp' %}" data-aos="slide-up">
-      <img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/3.webp' %}" data-aos="flip-up">
-      <img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/4.webp' %}" data-aos="flip-down">
-      <img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/5.webp' %}" data-aos="flip-right">
-<img class="item rounded m-auto d-block bookcover" src="{% static 'images/home/6.webp' %}" data-aos="flip-left"> -->
-      </div>
     </div>
-  </div>
-  <!-- <img class="bookcover" src="{% static 'images/driving_school.png' %}"> -->
+    {% comment %} <img class="bookcover" src="{% static 'images/driving_school.png' %}">   {% endcomment %}
 {% endblock content %}

@@ -1,13 +1,13 @@
 {% extends "_base.html" %}
 {% load crispy_forms_tags %}
 {% block title %}
-  S'inscrire
+    S'inscrire
 {% endblock title %}
 {% block content %}
-  <h2>S'inscrire</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <button class="btn btn-success" type="submit">S'inscrire</button>
-  </form>
+    <h2>S'inscrire</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-success" type="submit">S'inscrire</button>
+    </form>
 {% endblock content %}

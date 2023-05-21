@@ -1,0 +1,50 @@
+[
+  {
+    "model": "drivingschool.package",
+    "pk": 1,
+    "fields": {
+      "name": "1h",
+      "title": "1h de cours",
+      "text": "Plongez dans une expérience de conduite intensive ! Cette heure est adaptée aux apprenants ciblés, permettant au candidat de perfectionner ses compétences en matière de maniement du véhicule. C'est un excellent moyen d'affiner les domaines spécifiques de la conduite que vous souhaitez maîtriser.",
+      "price": "10.00",
+      "hours": 1,
+      "cover": "/cover_1h.png"
+    }
+  },
+  {
+    "model": "drivingschool.package",
+    "pk": 2,
+    "fields": {
+      "name": "2h",
+      "title": "2h de cours",
+      "text": "Deux fois plus de conduite, deux fois plus de progrès ! Cette formule offre aux candidats une session prolongée pour solidifier leurs techniques de conduite. Qu'il s'agisse de se garer en parallèle ou de maîtriser les virages serrés, deux heures vous donnent l'avantage de la continuité et d'une pratique abondante.",
+      "price": "20.00",
+      "hours": 2,
+      "cover": "/cover_2h.png"
+    }
+  },
+  {
+    "model": "drivingschool.package",
+    "pk": 3,
+    "fields": {
+      "name": "3h",
+      "title": "3h de cours",
+      "text": "Le tiercé gagnant de la maîtrise de la conduite ! Trois heures de conduite immersive permettent au candidat d'explorer les différents aspects de la conduite - de la vitesse de croisière sur autoroute aux manœuvres en ville. Il s'agit d'un cours complet qui garantit une prise en main sûre du volant et de la route.",
+      "price": "30.00",
+      "hours": 3,
+      "cover": "/cover_3h.png"
+    }
+  },
+  {
+    "model": "drivingschool.package",
+    "pk": 4,
+    "fields": {
+      "name": "20h",
+      "title": "20h de cours",
+      "text": "Le nec plus ultra en matière de conduite ! Vingt heures pour une expérience complète. Les candidats auront suffisamment de temps pour commencer par les bases, passer aux techniques avancées et même s'exercer à des scénarios de la vie réelle. Ce cours est conçu pour former non seulement des conducteurs, mais aussi des experts prêts à prendre la route.",
+      "price": "150.00",
+      "hours": 20,
+      "cover": "/cover_20h.png"
+    }
+  }
+]

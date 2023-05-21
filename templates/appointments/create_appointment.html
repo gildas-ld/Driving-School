@@ -1,0 +1,9 @@
+{% extends '_base.html' %}
+{% block content %}
+    <h2>Créer un rendez-vous</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-outline-primary" type="submit">Créer</button>
+    </form>
+{% endblock %}

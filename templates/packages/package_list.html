@@ -1,0 +1,22 @@
+<!-- packages/package_list.html -->
+
+{% extends '_base.html' %}
+{% block content %}
+
+<h2>Formules de cours</h2>
+
+<div class="list-group w-75">
+  {% for package in object_list %}
+  <a href="{% url 'package_detail' package.pk %}" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><u>{{ package.title }}</u></h5>
+      <small>
+        <span class="badge bg-primary rounded-pill"> {{ package.price }} € </span>
+      </small>
+    </div>
+    <p class="mb-1">{{ package.text }}</p>
+  </a>
+  {% endfor %}
+</div>
+
+{% endblock %}

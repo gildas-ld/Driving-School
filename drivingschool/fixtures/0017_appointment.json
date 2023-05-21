@@ -1,0 +1,38 @@
+[
+  {
+    "model": "drivingschool.appointment",
+    "pk": 1,
+    "fields": {
+      "student": 1,
+      "instructor": 1,
+      "date": "2023-06-03T11:00:00Z",
+      "duration": 1,
+      "lesson_type": "ville",
+      "location": "15, Avenue des Gobelins 75005"
+    }
+  },
+  {
+    "model": "drivingschool.appointment",
+    "pk": 2,
+    "fields": {
+      "student": 1,
+      "instructor": 1,
+      "date": "2023-06-03T11:00:00Z",
+      "duration": 1,
+      "lesson_type": "ville",
+      "location": "6, Rue Arsene Houssaye 75008"
+    }
+  },
+  {
+    "model": "drivingschool.appointment",
+    "pk": 3,
+    "fields": {
+      "student": 1,
+      "instructor": 2,
+      "date": "2023-06-03T11:00:00Z",
+      "duration": 1,
+      "lesson_type": "ville",
+      "location": "46, Rue Caulaincourt 75018"
+    }
+  }
+]

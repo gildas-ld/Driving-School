@@ -1,0 +1,51 @@
+digraph "lessons_lessonstaken" {
+
+splines = ortho;
+fontname = "Inconsolata";
+
+node [colorscheme = ylgnbu4];
+edge [colorscheme = dark28, dir = both];
+
+account_emailaddress  [shape = record, label = "{ account_emailaddress | email : varchar(254)\l verified : boolean\l primary : boolean\l user_id : bigint\l| id : integer\l }"];
+account_emailconfirmation  [shape = record, label = "{ account_emailconfirmation | created : timestamp with time zone\l sent : timestamp with time zone\l key : varchar(64)\l email_address_id : integer\l| id : integer\l }"];
+auth_group  [shape = record, label = "{ auth_group | name : varchar(150)\l| id : integer\l }"];
+auth_group_permissions  [shape = record, label = "{ auth_group_permissions | group_id : integer\l permission_id : integer\l| id : bigint\l }"];
+auth_permission  [shape = record, label = "{ auth_permission | name : varchar(255)\l content_type_id : integer\l codename : varchar(100)\l| id : integer\l }"];
+django_admin_log  [shape = record, label = "{ django_admin_log | action_time : timestamp with time zone\l object_id : text\l object_repr : varchar(200)\l action_flag : smallint\l change_message : text\l content_type_id : integer\l user_id : bigint\l| id : integer\l }"];
+django_content_type  [shape = record, label = "{ django_content_type | app_label : varchar(100)\l model : varchar(100)\l| id : integer\l }"];
+drivingschool_appointment  [shape = record, label = "{ drivingschool_appointment | date : timestamp with time zone\l location : varchar(100)\l instructor_id : bigint\l student_id : bigint\l duration : integer\l lesson_type : varchar(100)\l| id : bigint\l }"];
+drivingschool_customuser  [shape = record, label = "{ drivingschool_customuser | password : varchar(128)\l last_login : timestamp with time zone\l is_superuser : boolean\l username : varchar(150)\l first_name : varchar(150)\l last_name : varchar(150)\l email : varchar(254)\l is_staff : boolean\l is_active : boolean\l date_joined : timestamp with time zone\l| id : bigint\l }"];
+drivingschool_customuser_groups [shape = record, label = "{ drivingschool_customuser_groups | customuser_id : bigint\l group_id : integer\l| id : bigint\l }"];
+drivingschool_customuser_user_permissions [shape = record, label = "{ drivingschool_customuser_user_permissions | customuser_id : bigint\l permission_id : integer\l| id : bigint\l }"];
+drivingschool_instructor  [shape = record, label = "{ drivingschool_instructor | user_id : bigint\l| id : bigint\l }"];
+drivingschool_package  [shape = record, label = "{ drivingschool_package | name : varchar(100)\l title : text\l text : text\l price : numeric(6,2)\l hours : integer\l cover : text\l| id : bigint\l }"];
+drivingschool_student  [shape = record, label = "{ drivingschool_student | user_id : bigint\l| id : bigint\l }"];
+drivingschool_student_packages [shape = record, label = "{ drivingschool_student_packages | student_id : bigint\l package_id : bigint\l| id : bigint\l }"];
+drivingschool_userprofile  [shape = record, label = "{ drivingschool_userprofile | user_type : varchar(10)\l remaining_hours : integer\l user_id : bigint\l| id : bigint\l }"];
+lessons_lesson  [shape = record, label = "{ lessons_lesson | name : text\l title : varchar(200)\l text : text\l price : numeric(6,2)\l cover : varchar(100)\l| id : bigint\l }"];
+lessons_lessonstaken  [shape = record, label = "{ lessons_lessonstaken | date : timestamp with time zone\l effective : boolean\l duration : double precision\l commentary : text\l customuser_id : bigint\l| id : bigint\l }"];
+lessons_review  [shape = record, label = "{ lessons_review | review : varchar(255)\l author_id : bigint\l lesson_id : bigint\l| id : bigint\l }"];
+
+account_emailaddress  -> drivingschool_customuser  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "user_id:id", headlabel = ""];
+account_emailconfirmation  -> account_emailaddress  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "email_address_id:id", headlabel = ""];
+auth_group_permissions  -> auth_group  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "group_id:id", headlabel = ""];
+auth_group_permissions  -> auth_permission  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "permission_id:id", headlabel = ""];
+auth_permission  -> django_content_type  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "content_type_id:id", headlabel = ""];
+django_admin_log  -> django_content_type  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "content_type_id:id", headlabel = ""];
+django_admin_log  -> drivingschool_customuser  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "user_id:id", headlabel = ""];
+drivingschool_appointment  -> drivingschool_instructor  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "instructor_id:id", headlabel = ""];
+drivingschool_appointment  -> drivingschool_userprofile  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "student_id:id", headlabel = ""];
+drivingschool_customuser_groups -> auth_group  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "group_id:id", headlabel = ""];
+drivingschool_customuser_groups -> drivingschool_customuser  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "customuser_id:id", headlabel = ""];
+drivingschool_customuser_user_permissions -> auth_permission  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "permission_id:id", headlabel = ""];
+drivingschool_customuser_user_permissions -> drivingschool_customuser  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "customuser_id:id", headlabel = ""];
+drivingschool_instructor  -> drivingschool_userprofile  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "user_id:id", headlabel = ""];
+drivingschool_student  -> drivingschool_userprofile  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "user_id:id", headlabel = ""];
+drivingschool_student_packages -> drivingschool_package  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "package_id:id", headlabel = ""];
+drivingschool_student_packages -> drivingschool_student  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "student_id:id", headlabel = ""];
+drivingschool_userprofile  -> drivingschool_customuser  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "user_id:id", headlabel = ""];
+lessons_lessonstaken  -> drivingschool_customuser  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "customuser_id:id", headlabel = ""];
+lessons_review  -> drivingschool_customuser  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "author_id:id", headlabel = ""];
+lessons_review  -> lessons_lesson  [color = "#595959", style = solid , arrowtail = none , arrowhead = normal , taillabel = "", label = "lesson_id:id", headlabel = ""];
+
+}

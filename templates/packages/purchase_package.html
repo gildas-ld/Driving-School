@@ -1,0 +1,20 @@
+<!-- packages/purchase_package.html -->
+
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h2>Purchase {{ package.name }}</h2>
+
+<form method="post">
+  {% csrf_token %}
+
+  {{ form.as_p }}
+
+  <input
+    type="submit"
+    value="Purchase"
+  >
+</form>
+
+{% endblock %}

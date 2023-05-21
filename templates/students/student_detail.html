@@ -1,0 +1,33 @@
+<!-- students/student_detail.html -->
+{% extends '_base.html' %}
+{% block content %}
+  <h2>Bienvenue {{ user_profile.user.username|capfirst }}</h2>
+  <p>
+    Nombre d'heures restantes : {{ user_profile.remaining_hours }}
+    {% if user_profile.remaining_hours > 0 %}
+      <p>
+        Nous vous suggérons de prendre un rendez-vous en utilisant vos heures restantes. <a href="{% url 'create_appointment' %}">Prendre un rendez-vous</a>
+      </p>
+    </p>
+  {% else %}
+    <p>Vous n'avez plus d'heures. Nous vous suggérons d'acheter des heures supplémentaires.</p>
+    <a href="{% url 'package_list' %}" class="btn btn-primary">Acheter des heures</a>
+  {% endif %}
+</p>
+<p>
+  Prochains rendez-vous :
+  <ol class="list-group list-group-numbered w-50">
+    {% for appointment in appointments %}
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+        <div class="fw-bold">{{ appointment.date }}</div>
+        Rendez-vous à : {{ appointment.location }} Pour une durée de <u>{{ appointment.duration }} heure(s)</u>
+        </div>
+        <span class="badge bg-primary rounded-pill">
+          {{ appointment.instructor.full_name }}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+</p>
+{% endblock %}

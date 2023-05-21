@@ -4,7 +4,8 @@
 
 # Overview
 
-This is a project made with the Django REST framework, it is an API that allows to manage a driving school, it includes :
+This is a project made with the Django REST framework, it is an API that allows to manage a driving school, it
+includes :
 
 - Authentication with JWT tokens
 - Display, pagination and sorting of beer references

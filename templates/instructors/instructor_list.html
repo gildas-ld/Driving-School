@@ -1,0 +1,12 @@
+<!-- instructors/instructor_list.html -->
+{% extends '_base.html' %}
+{% block content %}
+  <h2>Moniteurs</h2>
+  <ul class="list-group">
+    {% for instructor in object_list %}
+      <li class="list-group-item">
+        <a href="{% url 'instructor_detail' instructor.pk %}">{{ instructor.full_name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

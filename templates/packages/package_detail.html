@@ -1,0 +1,42 @@
+<!-- packages/package_detail.html -->
+{% extends '_base.html' %} {% block content %}
+<h2>{{ object.name }} ({{ object.hours }} hours)</h2>
+<p>Prix : {{ object.price }} €</p>
+<form
+  method="post"
+  action="{% url 'purchase_package' object.pk %}"
+>
+  {% csrf_token %}
+  <input
+    class="form-control"
+    type="hidden"
+    name="package"
+    value="{{ object.pk }}"
+  />
+  <label>Quantité</label>
+  <input
+    class="form-control"
+    type="number"
+    name="quantity"
+    value="1"
+    min="1"
+    required
+  />
+
+  {% if user.is_authenticated %}
+  <input
+    type="submit"
+    value="Acheter"
+    class="btn btn-outline-primary btn-sm my-2"
+  />
+  {% else %}
+
+  <a
+    class="btn btn-outline-primary btn-sm my-2"
+    href="{% url 'account_login' %}"
+    >Se connecter</a
+  >
+
+  {% endif %}
+</form>
+{% endblock content %}

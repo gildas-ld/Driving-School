@@ -2,6 +2,7 @@ import os
 import sys
 from datetime import timedelta
 from pathlib import Path
+
 from django.contrib import staticfiles
 from dotenv import load_dotenv, find_dotenv
 
@@ -22,6 +23,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
 ALLOWED_HOSTS = ["*", "localhost", "127.0.0.1"]
 # Application definition
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -42,10 +44,10 @@ INSTALLED_APPS = [
     "allauth.account",
     "debug_toolbar",
     # Local
-    "drivingschool.apps.DrivingSchoolConfig",
-    "accounts.apps.AccountsConfig",
+    "drivingschool",
+    "api",
+    "events",
     "pages.apps.PagesConfig",
-    "lessons.apps.LessonsConfig",
 ]
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
@@ -83,7 +85,9 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "allauth.account.middleware.AccountMiddleware",
 ]
+
 ROOT_URLCONF = "django_project.urls"
 TEMPLATES = [
     {
@@ -103,22 +107,22 @@ TEMPLATES = [
 WSGI_APPLICATION = "django_project.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-    }
-}
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': DB_NAME,
-#         'USER': DB_USER,
-#         'PASSWORD': DB_PASS,
-#         'HOST': DB_HOST,
-#         'PORT': DB_PORT,
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
 #     }
 # }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": DB_NAME,
+        "USER": DB_USER,
+        "PASSWORD": DB_PASS,
+        "HOST": DB_HOST,
+        "PORT": DB_PORT,
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [
@@ -208,19 +212,24 @@ LOGGING = {
     },
     "handlers": {
         "console": {
-            "level": "WARNING",
+            "level": "ERROR",  # DEBUG
             "filters": ["require_debug_true"],
             "class": "logging.StreamHandler",
             "formatter": "simple",
         }
     },
     "loggers": {
+        "django.db.backends": {
+            "level": "ERROR",  # DEBUG
+            "handlers": ["console"],
+        },
         "django": {
             "handlers": ["console"],
             "propagate": True,
-        }
+        },
     },
 }
+AUTH_USER_MODEL = "drivingschool.CustomUser"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
@@ -228,8 +237,6 @@ MEDIA_ROOT = BASE_DIR / "media"
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-AUTH_USER_MODEL = "accounts.CustomUser"
 
 # django-crispy-forms
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"

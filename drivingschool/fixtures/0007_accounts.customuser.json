@@ -1,0 +1,128 @@
+[
+  {
+    "model": "drivingschool.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2022-10-02T16:14:17.418Z",
+      "is_superuser": true,
+      "username": "gildas",
+      "first_name": "Gildas",
+      "last_name": "Le Drogoff",
+      "email": "gildas.le-drogoff@epitech.eu",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-06-03T00:00:00Z",
+      "groups": [1, 4],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "drivingschool.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2022-09-30T14:34:26.064Z",
+      "is_superuser": true,
+      "username": "GéraldL",
+      "first_name": "Gérald",
+      "last_name": "Le Coq",
+      "email": "gerald.le-coq@epitech.eu",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-06-03T00:00:00Z",
+      "groups": [1],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "drivingschool.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2022-10-02T15:45:58Z",
+      "is_superuser": false,
+      "username": "HugoD",
+      "first_name": "Hugo",
+      "last_name": "Dutreuil",
+      "email": "hugo.dutreuil@epitech.eu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-06-03T00:00:00Z",
+      "groups": [1],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "drivingschool.customuser",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2023-05-29T15:23:10Z",
+      "is_superuser": false,
+      "username": "OlgaO",
+      "first_name": "Olga",
+      "last_name": "Ortega",
+      "email": "olga.ortega@epitech.eu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-06-03T00:00:00Z",
+      "groups": [3],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "drivingschool.customuser",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2023-05-29T15:23:10Z",
+      "is_superuser": false,
+      "username": "MireilleR",
+      "first_name": "Mireille",
+      "last_name": "Roux",
+      "email": "mireille.roux@epitech.eu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-06-03T00:00:00Z",
+      "groups": [2],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "drivingschool.customuser",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2023-05-29T15:23:10Z",
+      "is_superuser": false,
+      "username": "AlberteB",
+      "first_name": "Alberte",
+      "last_name": "Bonnet",
+      "email": "alberte.bonnet@epitech.eu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-06-03T00:00:00Z",
+      "groups": [2],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "drivingschool.customuser",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+      "last_login": "2022-10-02T15:45:58Z",
+      "is_superuser": false,
+      "username": "RobertD",
+      "first_name": "Robert",
+      "last_name": "Dupond",
+      "email": "robert.dupond@epitech.eu",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-06-03T00:00:00Z",
+      "groups": [1],
+      "user_permissions": []
+    }
+  }
+]

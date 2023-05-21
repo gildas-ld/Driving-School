@@ -1,0 +1,12 @@
+<!-- students/student_list.html -->
+{% extends '_base.html' %}
+{% block content %}
+  <h2>Étudiants</h2>
+  <ul class="list-group">
+    {% for student in object_list %}
+      <li class="list-group-item">
+        <a href="{% url 'student_detail' user_id=student.pk %}">{{ student.user.username }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
