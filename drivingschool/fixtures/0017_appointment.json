@@ -8,7 +8,7 @@
       "date": "2023-06-03T11:00:00Z",
       "duration": 1,
       "lesson_type": "ville",
-      "location": "15, Avenue des Gobelins 75005"
+      "location": "15, Avenue des Gobelins 75 005 Paris"
     }
   },
   {
@@ -20,7 +20,7 @@
       "date": "2023-06-03T11:00:00Z",
       "duration": 1,
       "lesson_type": "ville",
-      "location": "6, Rue Arsene Houssaye 75008"
+      "location": "6, Rue Arsene Houssaye 75 008 Paris"
     }
   },
   {
@@ -32,7 +32,7 @@
       "date": "2023-06-03T11:00:00Z",
       "duration": 1,
       "lesson_type": "ville",
-      "location": "46, Rue Caulaincourt 75018"
+      "location": "46, Rue Caulaincourt 75 018 Paris"
     }
   }
 ]
