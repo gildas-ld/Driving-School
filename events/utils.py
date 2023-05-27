@@ -1,5 +1,4 @@
 from calendar import HTMLCalendar
-
 from .models import Event
 
 
@@ -17,7 +16,6 @@ class EventCalendar(HTMLCalendar):
         for event in events_from_day:
             events_html += event.get_absolute_url() + "<br>"
         events_html += "</ul>"
-
         if day == 0:
             return '<td class="noday">&nbsp;</td>'  # day outside month
         else:
@@ -38,9 +36,7 @@ class EventCalendar(HTMLCalendar):
         """
         Return a formatted month as a table.
         """
-
         events = Event.objects.filter(day__month=themonth)
-
         v = []
         a = v.append
         a('<table border="0" cellpadding="0" cellspacing="0" class="month">')

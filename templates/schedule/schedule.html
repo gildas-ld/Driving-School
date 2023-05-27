@@ -1,0 +1,18 @@
+<!-- schedule/schedule.html -->
+{% extends '_base.html' %}
+{% block content %}
+    <h2>Votre emploi du temps</h2>
+    <ul class="list-group">
+        {% for appointment in object_list %}
+            <li class="list-group-item">
+                Étudiant : {{ appointment.student.user.first_name }} {{ appointment.student.user.last_name }} <br>
+                Date: {{ appointment.date }} <br>
+                Durée : {{ appointment.duration }} mins <br>
+                Type de leçon : {{ appointment.lesson_type }} <br>
+                Emplacement : {{ appointment.location }}
+            </li>
+        {% empty %}
+            <li class="list-group-item">Pas de rendez-vous à venir.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

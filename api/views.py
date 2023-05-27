@@ -5,7 +5,6 @@ from rest_framework import viewsets
 from rest_framework.permissions import (
     DjangoModelPermissionsOrAnonReadOnly,
 )
-
 from .filters import CustomUserFilter
 from .serializers import UserSerializer, UserProfileSerializer
 from drivingschool.models import UserProfile

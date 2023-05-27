@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 import calendar
 import datetime
-
 from django.contrib import admin
 from django.urls import reverse
 from django.utils.safestring import mark_safe
-
 from .models import Event
 from .utils import EventCalendar
 
@@ -19,7 +16,6 @@ class EventAdmin(admin.ModelAdmin):
     def changelist_view(self, request, extra_context=None):
         after_day = request.GET.get("day__gte", None)
         extra_context = extra_context or {}
-
         if not after_day:
             d = datetime.date.today()
         else:
@@ -30,7 +26,6 @@ class EventAdmin(admin.ModelAdmin):
                 )
             except:
                 d = datetime.date.today()
-
         previous_month = datetime.date(
             year=d.year, month=d.month, day=1
         )  # find first day of current month
@@ -40,7 +35,6 @@ class EventAdmin(admin.ModelAdmin):
         previous_month = datetime.date(
             year=previous_month.year, month=previous_month.month, day=1
         )  # find first day of previous month
-
         last_day = calendar.monthrange(d.year, d.month)
         next_month = datetime.date(
             year=d.year, month=d.month, day=last_day[1]
@@ -49,7 +43,6 @@ class EventAdmin(admin.ModelAdmin):
         next_month = datetime.date(
             year=next_month.year, month=next_month.month, day=1
         )  # find first day of next month
-
         extra_context["previous_month"] = (
             reverse("admin:events_event_changelist")
             + "?day__gte="
@@ -58,7 +51,6 @@ class EventAdmin(admin.ModelAdmin):
         extra_context["next_month"] = (
             reverse("admin:events_event_changelist") + "?day__gte=" + str(next_month)
         )
-
         cal = EventCalendar()
         html_calendar = cal.formatmonth(d.year, d.month, withyear=True)
         html_calendar = html_calendar.replace("<td ", '<td  width="150" height="150"')

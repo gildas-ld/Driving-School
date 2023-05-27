@@ -13,7 +13,10 @@
       "is_staff": true,
       "is_active": true,
       "date_joined": "2023-06-03T00:00:00Z",
-      "groups": [1, 4],
+      "groups": [
+        1,
+        4
+      ],
       "user_permissions": []
     }
   },
@@ -31,7 +34,9 @@
       "is_staff": true,
       "is_active": true,
       "date_joined": "2023-06-03T00:00:00Z",
-      "groups": [1],
+      "groups": [
+        1
+      ],
       "user_permissions": []
     }
   },
@@ -49,7 +54,9 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2023-06-03T00:00:00Z",
-      "groups": [1],
+      "groups": [
+        1
+      ],
       "user_permissions": []
     }
   },
@@ -67,7 +74,9 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2023-06-03T00:00:00Z",
-      "groups": [3],
+      "groups": [
+        3
+      ],
       "user_permissions": []
     }
   },
@@ -85,7 +94,9 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2023-06-03T00:00:00Z",
-      "groups": [2],
+      "groups": [
+        2
+      ],
       "user_permissions": []
     }
   },
@@ -103,7 +114,9 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2023-06-03T00:00:00Z",
-      "groups": [2],
+      "groups": [
+        2
+      ],
       "user_permissions": []
     }
   },
@@ -121,7 +134,9 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2023-06-03T00:00:00Z",
-      "groups": [1],
+      "groups": [
+        1
+      ],
       "user_permissions": []
     }
   }

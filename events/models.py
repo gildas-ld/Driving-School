@@ -1,9 +1,7 @@
 from __future__ import unicode_literals
-
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.urls import reverse
-
 
 # Create your models here.
 
@@ -30,7 +28,6 @@ class Event(models.Model):
             overlap = True
         elif new_start <= fixed_start and new_end >= fixed_end:  # outter limits
             overlap = True
-
         return overlap
 
     def get_absolute_url(self):
@@ -43,7 +40,6 @@ class Event(models.Model):
     def clean(self):
         if self.end_time <= self.start_time:
             raise ValidationError("Ending hour must be after the starting hour")
-
         events = Event.objects.filter(day=self.day)
         if events.exists():
             for event in events:

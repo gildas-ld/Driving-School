@@ -13,18 +13,8 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
     TokenVerifyView,
 )
-
-from drivingschool.views import (
-    RegisterView,
-    student_list,
-    student_detail,
-    instructor_list,
-    package_list,
-    package_detail,
-    purchase_package,
-    instructor_detail,
-    create_appointment,
-)
+from drivingschool.urls import drivingschool_urlpatterns
+from drivingschool.views import RegisterView
 
 API_TITLE = "Driving School"
 API_DESCRIPTION = "Driving School's API"
@@ -38,21 +28,6 @@ api_urlpatterns = [
     path("auth/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("auth/token/verify/", TokenVerifyView.as_view(), name="token_verify"),
     path("auth/register/", RegisterView.as_view(), name="auth_register"),
-]
-drivingschool_apis = [
-    path("", include("api.urls")),
-]
-drivingschool_urlpatterns = [
-    path("students/", student_list, name="student_list"),
-    path("students/<int:user_id>/", student_detail, name="student_detail"),
-    path("instructors/", instructor_list, name="instructor_list"),
-    path("instructors/<int:pk>/", instructor_detail, name="instructor_detail"),
-    path("packages/", package_list, name="package_list"),
-    path("packages/<int:pk>/", package_detail, name="package_detail"),
-    path("create_appointment/", create_appointment, name="create_appointment"),
-    path("packages/<int:pk>/purchase/", purchase_package, name="purchase_package"),
-    path("purchase_package/", purchase_package, name="purchase_package"),
-    path("api/", include(drivingschool_apis)),
 ]
 urlpatterns = [  # User management
     path("accounts/", include("allauth.urls")),  # Local apps
