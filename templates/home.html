@@ -4,39 +4,44 @@
     Home
 {% endblock title %}
 {% block content %}
+    <div class="container-fluid">
+        {% if full_name %}<h4>Bienvenue, {{ full_name }} !</h4>{% endif %}
+        {% if user_role %}<small>Vous êtes connecté en tant que <em>{{ user_role }}</em></small>{% endif %}
+    </div>
+    
     <div class="order-lg-1 d-md-flex flex-column justify-content-center">
         <div>
-            <div class="container">
-                 <h1>Leçons de conduite à Paris</h1>
-                 <p>
-                     <p>
-                         Il est essentiel de savoir conduire, que ce soit pour des raisons pratiques, comme aller chercher les
-                         enfants à
-                         l'école,
-                         ou pour s'amuser, comme planifier un voyage à l'étranger. Si vous devez conduire pour le travail ou si
-                         vous voulez
-                         simplement conduire pour le plaisir, le permis de conduire peut être votre ticket pour le plaisir, la
-                         liberté et
-                         l'indépendance.
-                     </p>
-                 </p>
-                 <div>
-                     <div>Appelez-nous maintenant ou réservez en ligne 24/7</div>
-                     <div class="telephone">
-                         <i class="fa-solid fa-phone"></i> <a href="tel:+33144626215  ">+33144626215</a>
-                     </div>
-                 </div>
+            <div class="container-fluid">
+                <h1>Leçons de conduite à Paris</h1>
+                <p>
+                    <p>
+                        Il est essentiel de savoir conduire, que ce soit pour des raisons pratiques, comme aller chercher les
+                        enfants à
+                        l'école,
+                        ou pour s'amuser, comme planifier un voyage à l'étranger. Si vous devez conduire pour le travail ou si
+                        vous voulez
+                        simplement conduire pour le plaisir, le permis de conduire peut être votre ticket pour le plaisir, la
+                        liberté et
+                        l'indépendance.
+                    </p>
+                </p>
+                <div>
+                    <div>Appelez-nous maintenant ou réservez en ligne 24/7</div>
+                    <div class="telephone">
+                        <i class="fa-solid fa-phone"></i> <a href="tel:+33144626215  ">+33144626215</a>
+                    </div>
+                </div>
             </div>
             <div class="d-flex flex-wrap">
-               {% for image_url in image_urls %}
-               <img class="item rounded m-auto p-1 d-block bookcover"
-                    data-aos="{{ aos_effects|random }}" 
-                    src="{% static image_url %}">
-               {% endfor %}
+                {% for image_url in image_urls %}
+                    <img class="item rounded-3 m-auto p-1 d-block bookcover"
+                         data-aos="{{ aos_effects|random }}"
+                         src="{% static image_url %}">
+                {% endfor %}
             </div>
         </div>
     </div>
-    {% comment %} 
+    {% comment %}
     <img class="bookcover" src="{% static 'images/driving_school.png' %}">   
     {% endcomment %}
 {% endblock content %}

@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% block content %}
+<h2>Mettre à jour le rendez-vous</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button
+        class="btn btn-outline-primary"
+        type="submit"
+    >Mettre à jour</button>
+</form>
+{% endblock %}

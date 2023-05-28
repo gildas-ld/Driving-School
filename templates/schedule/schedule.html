@@ -2,14 +2,24 @@
 {% extends '_base.html' %}
 {% block content %}
     <h2>Votre emploi du temps</h2>
+    <a href="{% url 'create_appointment' %}" class="btn btn-outline-primary mb-3">Ajouter un rendez-vous</a>
     <ul class="list-group">
         {% for appointment in object_list %}
             <li class="list-group-item">
-                Étudiant : {{ appointment.student.user.first_name }} {{ appointment.student.user.last_name }} <br>
-                Date: {{ appointment.date }} <br>
-                Durée : {{ appointment.duration }} mins <br>
-                Type de leçon : {{ appointment.lesson_type }} <br>
+                Étudiant : {{ appointment.student.user.first_name }} {{ appointment.student.user.last_name }}
+                <br>
+                Date: {{ appointment.date }}
+                <br>
+                Durée : {{ appointment.duration }} mins
+                <br>
+                Type de leçon : {{ appointment.lesson_type }}
+                <br>
                 Emplacement : {{ appointment.location }}
+                <br>
+                <a href="{% url 'edit_appointment' appointment.id %}"
+                   class="btn btn-outline-warning btn-sm mt-2">Modifier</a>
+                <a href="{% url 'delete_appointment' appointment.id %}"
+                   class="btn btn-outline-danger btn-sm mt-2">Supprimer</a>
             </li>
         {% empty %}
             <li class="list-group-item">Pas de rendez-vous à venir.</li>

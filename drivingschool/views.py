@@ -1,5 +1,6 @@
 # from django.contrib.auth.models import User
 from django.contrib import messages
+from django.urls import reverse
 from django.contrib.auth import get_user_model  # User = get_user_model()
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
@@ -15,6 +16,7 @@ from .forms import PurchasePackageForm, CreateAppointmentForm
 from .models import Appointment, Instructor, UserProfile
 from .models import Student, Package
 from .serializers import RegisterSerializer
+from django.http import JsonResponse
 
 User = get_user_model()
 
@@ -105,36 +107,77 @@ appointment_create = AppointmentCreateView.as_view()
 
 
 def create_appointment(request):
-    # Vérifier si l'utilisateur est authentifié
     if not request.user.is_authenticated:
         return redirect("login")
-    # Vérifier si l'utilisateur est étudiant
+
     user_profile = UserProfile.objects.get(user=request.user)
-    print(user_profile.__dict__)
-    # if user_profile.user_type != "STUDENT":
-    #     print(request, "Seuls les étudiants peuvent créer des rendez-vous !")
-    #     return redirect("student_detail", pk=request.user.id)
+
     if request.method == "POST":
-        form = CreateAppointmentForm(request.POST)
+        form = CreateAppointmentForm(request.POST, instructor_user=request.user)
         if form.is_valid():
             appointment = form.save(commit=False)
-            appointment.student = user_profile
+
+            if user_profile.user_type == "Instructor":
+                # For instructors, they pick the student
+                student_profile = form.cleaned_data["student"]
+            elif user_profile.user_type == "Student":
+                student_profile = user_profile
+            else:
+                messages.error(
+                    request, "Only students or instructors can create appointments!"
+                )
+                return redirect("some_page")  # Redirect to an appropriate page
+
             duration = form.cleaned_data["duration"]
-            # Vérifier si l'étudiant a suffisamment d'heures
-            if user_profile.remaining_hours < duration:
-                messages.error(request, "Il ne vous reste plus assez d'heures !")
+            if student_profile.remaining_hours < duration:
+                messages.error(
+                    request, "The student doesn't have enough hours remaining!"
+                )
                 return redirect("create_appointment")
-            # Déduire la durée du rendez-vous des heures restantes de l'étudiant
-            user_profile.remaining_hours -= duration
-            user_profile.save()
+
+            student_profile.remaining_hours -= duration
+            student_profile.save()
+            appointment.student = student_profile
             appointment.save()
-            messages.success(request, "Rendez-vous créé avec succès !")
-            print(request, "Rendez-vous créé avec succès !")
+
+            messages.success(request, "Appointment successfully created!")
             return redirect("student_detail", user_id=request.user.id)
     else:
-        form = CreateAppointmentForm()
+        form = CreateAppointmentForm(instructor_user=request.user)
+
     context = {"form": form}
     return render(request, "appointments/create_appointment.html", context)
+
+
+from django.urls import reverse
+
+
+def edit_appointment(request, appointment_id):
+    appointment = Appointment.objects.get(id=appointment_id)
+
+    if request.method == "POST":
+        form = CreateAppointmentForm(request.POST, instance=appointment)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Appointment updated!")
+            return redirect(reverse("student_detail", args=[request.user.id]))
+    else:
+        form = CreateAppointmentForm(instance=appointment)
+
+    context = {"form": form}
+    return render(request, "appointments/edit_appointment.html", context)
+
+
+def delete_appointment(request, appointment_id):
+    appointment = Appointment.objects.get(id=appointment_id)
+
+    if request.method == "POST":
+        appointment.delete()
+        messages.success(request, "Appointment deleted!")
+        return redirect(reverse("student_detail", args=[request.user.id]))
+
+    context = {"appointment": appointment}
+    return render(request, "appointments/delete_appointment.html", context)
 
 
 def purchase_package(request, pk):
@@ -181,3 +224,13 @@ class InstructorScheduleView(ListView):
     def get_queryset(self):
         instructor = Instructor.objects.get(user__user=self.request.user)
         return Appointment.objects.filter(instructor=instructor).order_by("date")
+
+
+def get_remaining_hours(request):
+    student_id = request.GET.get("student_id")
+    try:
+        student = UserProfile.objects.get(id=student_id)
+        remaining_hours = student.remaining_hours
+        return JsonResponse({"remaining_hours": remaining_hours})
+    except UserProfile.DoesNotExist:
+        return JsonResponse({"error": "Student not found"}, status=404)

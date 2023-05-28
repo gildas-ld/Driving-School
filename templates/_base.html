@@ -7,7 +7,7 @@
                 Driving school
             {% endblock title %}
         </title>
-        <script src="{% static 'js/aos.min.js' %}" ></script>
+        <script src="{% static 'js/aos.min.js' %}"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon"
@@ -47,10 +47,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'package_list' %}">Forfaits</a>
                         </li>
-                         {% if user.is_authenticated %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'student_detail' user_id=request.user.id %}">Mes heures</a>
-                        </li>
+                        {% if user.is_authenticated %}
+                            {% if  user_role == "Student" %}
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                       href="{% url 'student_detail' user_id=request.user.id %}">Mes heures</a>
+                                </li>
+                            {% endif %}
+                            {% if  user_role == "Instructor" %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'schedule' %}">Planning</a>
+                                </li>
+                            {% endif %}
                         {% endif %}
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'about' %}">À propos</a>
@@ -96,7 +104,7 @@
             {% block content %}
             {% endblock content %}
         </div>
-        <script src="{% static 'js/bootstrap.bundle.min.js' %}" 
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"
                 crossorigin="anonymous"></script>
         <!-- JavaScript -->
         <script src="{% static 'js/jquery.min.js' %}"></script>

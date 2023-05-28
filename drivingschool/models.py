@@ -18,6 +18,9 @@ class UserProfile(models.Model):
     user_type = models.CharField(max_length=10, choices=USER_TYPE_CHOICES)
     remaining_hours = models.PositiveIntegerField(default=0)
 
+    def full_name(self):
+        return f"{self.user.first_name} {self.user.last_name}"
+
 
 class Student(models.Model):
     user = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
@@ -34,6 +37,9 @@ class Instructor(models.Model):
     #     return self.user.user.username
     def full_name(self):
         return f"{self.user.user.first_name} {self.user.user.last_name}"
+
+    def upcoming_appointments(self):
+        return self.appointment_set.filter(date__gt=timezone.now()).order_by("date")
 
 
 class Package(models.Model):

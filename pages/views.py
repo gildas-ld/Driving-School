@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView
+from drivingschool.models import UserProfile
 
 
 class HomePageView(TemplateView):
@@ -61,6 +62,10 @@ class HomePageView(TemplateView):
         ]
         context["image_urls"] = image_urls
         context["aos_effects"] = aos_effects
+        if self.request.user.is_authenticated:
+            user_profile = UserProfile.objects.get(user=self.request.user)
+            context["user_role"] = user_profile.user_type
+            context["full_name"] = user_profile.full_name
         return context
 
 
