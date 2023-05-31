@@ -4,6 +4,100 @@
     "pk": 1,
     "fields": {
       "user": 1,
+      "remaining_hours": 5,
+      "purchased_hours": 5,
+      "packages": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "drivingschool.student",
+    "pk": 11,
+    "fields": {
+      "user": 14,
+      "remaining_hours": 0,
+      "purchased_hours": 0,
+      "packages": []
+    }
+  },
+  {
+    "model": "drivingschool.student",
+    "pk": 12,
+    "fields": {
+      "user": 15,
+      "remaining_hours": 0,
+      "purchased_hours": 0,
+      "packages": []
+    }
+  },
+  {
+    "model": "drivingschool.student",
+    "pk": 13,
+    "fields": {
+      "user": 16,
+      "remaining_hours": 0,
+      "purchased_hours": 0,
+      "packages": []
+    }
+  },
+  {
+    "model": "drivingschool.student",
+    "pk": 14,
+    "fields": {
+      "user": 17,
+      "remaining_hours": 5,
+      "purchased_hours": 5,
+      "packages": []
+    }
+  },
+  {
+    "model": "drivingschool.student",
+    "pk": 15,
+    "fields": {
+      "user": 18,
+      "remaining_hours": 0,
+      "purchased_hours": 0,
+      "packages": []
+    }
+  },
+  {
+    "model": "drivingschool.student",
+    "pk": 16,
+    "fields": {
+      "user": 19,
+      "remaining_hours": 0,
+      "purchased_hours": 0,
+      "packages": []
+    }
+  },
+  {
+    "model": "drivingschool.student",
+    "pk": 17,
+    "fields": {
+      "user": 20,
+      "remaining_hours": 0,
+      "purchased_hours": 0,
+      "packages": []
+    }
+  },
+  {
+    "model": "drivingschool.student",
+    "pk": 18,
+    "fields": {
+      "user": 21,
+      "remaining_hours": 1,
+      "purchased_hours": 1,
+      "packages": []
+    }
+  },
+  {
+    "model": "drivingschool.student",
+    "pk": 19,
+    "fields": {
+      "user": 22,
+      "remaining_hours": 20,
+      "purchased_hours": 20,
       "packages": []
     }
   }

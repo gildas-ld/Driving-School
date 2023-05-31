@@ -1,44 +1,5 @@
 [
     {
-        "model": "admin.logentry",
-        "pk": 1,
-        "fields": {
-            "action_time": "2023-09-28T12:31:53.429Z",
-            "user": 1,
-            "content_type": 3,
-            "object_id": "2",
-            "object_repr": "Instructor",
-            "action_flag": 2,
-            "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 2,
-        "fields": {
-            "action_time": "2023-09-28T12:32:48.177Z",
-            "user": 1,
-            "content_type": 3,
-            "object_id": "3",
-            "object_repr": "Secretary",
-            "action_flag": 2,
-            "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 3,
-        "fields": {
-            "action_time": "2023-09-28T12:34:22.862Z",
-            "user": 1,
-            "content_type": 3,
-            "object_id": "4",
-            "object_repr": "Admin",
-            "action_flag": 2,
-            "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
-        }
-    },
-    {
         "model": "auth.permission",
         "pk": 1,
         "fields": {
@@ -780,27 +741,19 @@
         }
     },
     {
-        "model": "sessions.session",
-        "pk": "424qvpk751s61dq5rfnfns6rlbxfwhnw",
-        "fields": {
-            "session_data": ".eJxVjMEOwiAQRP-FsyFlWaB40x9ploWmjQ1NBE7Gf5eaHvQ4b97MS0zU6jK1kp7TGsVVKHH5ZYH4kfJR0LYdWBLz3nKVX-esi7z1lHJdmeq65_u5-rtaqCzHj8KE3jIBzxHQOhcCahcYNXsD1oURYSANCjjq0WL3rQMzmM68ncX7A6trO00:1qlq9w:i_EXjyK_c_FO38XbpU3zXos-7IRn1RQdyVSW54bM8FA",
-            "expire_date": "2023-10-12T12:30:24.867Z"
-        }
-    },
-    {
         "model": "drivingschool.customuser",
         "pk": 1,
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-            "last_login": "2023-09-28T12:30:24.866Z",
+            "last_login": "2023-05-17T00:00:00Z",
             "is_superuser": true,
-            "username": "gildas",
+            "username": "Gildas Le Drogoff",
             "first_name": "Gildas",
             "last_name": "Le Drogoff",
             "email": "gildas.le-drogoff@epitech.eu",
             "is_staff": true,
             "is_active": true,
-            "date_joined": "2023-06-03T00:00:00Z",
+            "date_joined": "2023-05-17T00:00:00Z",
             "groups": [
                 1,
                 4
@@ -813,15 +766,15 @@
         "pk": 2,
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-            "last_login": "2022-09-30T14:34:26.064Z",
+            "last_login": "2023-05-17T00:00:00Z",
             "is_superuser": true,
-            "username": "GéraldL",
+            "username": "Gérald Le Coq",
             "first_name": "Gérald",
             "last_name": "Le Coq",
             "email": "gerald.le-coq@epitech.eu",
             "is_staff": true,
             "is_active": true,
-            "date_joined": "2023-06-03T00:00:00Z",
+            "date_joined": "2023-05-17T00:00:00Z",
             "groups": [
                 1
             ],
@@ -833,15 +786,15 @@
         "pk": 3,
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-            "last_login": "2022-10-02T15:45:58Z",
+            "last_login": "2023-05-17T00:00:00Z",
             "is_superuser": false,
-            "username": "HugoD",
+            "username": "Hugo Dutreuil",
             "first_name": "Hugo",
             "last_name": "Dutreuil",
             "email": "hugo.dutreuil@epitech.eu",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2023-06-03T00:00:00Z",
+            "date_joined": "2023-05-17T00:00:00Z",
             "groups": [
                 1
             ],
@@ -853,15 +806,15 @@
         "pk": 4,
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-            "last_login": "2023-05-29T15:23:10Z",
+            "last_login": "2023-05-17T00:00:00Z",
             "is_superuser": false,
-            "username": "OlgaO",
+            "username": "Olga Ortega",
             "first_name": "Olga",
             "last_name": "Ortega",
             "email": "olga.ortega@epitech.eu",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2023-06-03T00:00:00Z",
+            "date_joined": "2023-05-17T00:00:00Z",
             "groups": [
                 3
             ],
@@ -873,15 +826,15 @@
         "pk": 5,
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-            "last_login": "2023-05-29T15:23:10Z",
+            "last_login": "2023-05-17T00:00:00Z",
             "is_superuser": false,
-            "username": "MireilleR",
+            "username": "Mireille Roux",
             "first_name": "Mireille",
             "last_name": "Roux",
             "email": "mireille.roux@epitech.eu",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2023-06-03T00:00:00Z",
+            "date_joined": "2023-05-17T00:00:00Z",
             "groups": [
                 2
             ],
@@ -893,15 +846,15 @@
         "pk": 6,
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-            "last_login": "2023-05-29T15:23:10Z",
+            "last_login": "2023-05-17T00:00:00Z",
             "is_superuser": false,
-            "username": "AlberteB",
+            "username": "Alberte Bonnet",
             "first_name": "Alberte",
             "last_name": "Bonnet",
             "email": "alberte.bonnet@epitech.eu",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2023-06-03T00:00:00Z",
+            "date_joined": "2023-05-17T00:00:00Z",
             "groups": [
                 2
             ],
@@ -913,18 +866,378 @@
         "pk": 7,
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
-            "last_login": "2022-10-02T15:45:58Z",
+            "last_login": "2023-05-17T00:00:00Z",
             "is_superuser": false,
-            "username": "RobertD",
+            "username": "Robert Dupond",
             "first_name": "Robert",
             "last_name": "Dupond",
             "email": "robert.dupond@epitech.eu",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2023-06-03T00:00:00Z",
+            "date_joined": "2023-05-17T00:00:00Z",
             "groups": [
                 1
             ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 8,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Fiona Stevens",
+            "first_name": "Fiona",
+            "last_name": "Stevens",
+            "email": "f.stevens@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 9,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Lucy Anderson",
+            "first_name": "Lucy",
+            "last_name": "Anderson",
+            "email": "l.anderson@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 10,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Oliver Fowler",
+            "first_name": "Oliver",
+            "last_name": "Fowler",
+            "email": "o.fowler@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 11,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Jack Campbell",
+            "first_name": "Jack",
+            "last_name": "Campbell",
+            "email": "j.campbell@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 12,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Ned Ellis",
+            "first_name": "Ned",
+            "last_name": "Ellis",
+            "email": "n.ellis@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 13,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "James Hawkins",
+            "first_name": "James",
+            "last_name": "Hawkins",
+            "email": "j.hawkins@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 14,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Alina Morgan",
+            "first_name": "Alina",
+            "last_name": "Morgan",
+            "email": "a.morgan@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 15,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Albert Holmes",
+            "first_name": "Albert",
+            "last_name": "Holmes",
+            "email": "a.holmes@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 16,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Paul Evans",
+            "first_name": "Paul",
+            "last_name": "Evans",
+            "email": "p.evans@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 17,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Alfred Douglas",
+            "first_name": "Alfred",
+            "last_name": "Douglas",
+            "email": "a.douglas@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 18,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Julian Craig",
+            "first_name": "Julian",
+            "last_name": "Craig",
+            "email": "j.craig@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 19,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "James Clark",
+            "first_name": "James",
+            "last_name": "Clark",
+            "email": "j.clark@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 20,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Jordan Scott",
+            "first_name": "Jordan",
+            "last_name": "Scott",
+            "email": "j.scott@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 21,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Kelsey Carroll",
+            "first_name": "Kelsey",
+            "last_name": "Carroll",
+            "email": "k.carroll@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 22,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Emily Sullivan",
+            "first_name": "Emily",
+            "last_name": "Sullivan",
+            "email": "e.sullivan@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 23,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Alen Cunningham",
+            "first_name": "Alen",
+            "last_name": "Cunningham",
+            "email": "a.cunningham@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 24,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Briony Taylor",
+            "first_name": "Briony",
+            "last_name": "Taylor",
+            "email": "b.taylor@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 25,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Steven Carroll",
+            "first_name": "Steven",
+            "last_name": "Carroll",
+            "email": "s.carroll@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 26,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Melissa Bailey",
+            "first_name": "Melissa",
+            "last_name": "Bailey",
+            "email": "m.bailey@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "drivingschool.customuser",
+        "pk": 27,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
+            "last_login": "2023-05-17T00:00:00Z",
+            "is_superuser": false,
+            "username": "Carl Miller",
+            "first_name": "Carl",
+            "last_name": "Miller",
+            "email": "c.miller@epitech.eu",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-05-17T00:00:00Z",
+            "groups": [],
             "user_permissions": []
         }
     },
@@ -933,8 +1246,7 @@
         "pk": 1,
         "fields": {
             "user": 1,
-            "user_type": "Student",
-            "remaining_hours": 5
+            "user_type": "Student"
         }
     },
     {
@@ -942,8 +1254,7 @@
         "pk": 2,
         "fields": {
             "user": 5,
-            "user_type": "Instructor",
-            "remaining_hours": 0
+            "user_type": "Instructor"
         }
     },
     {
@@ -951,8 +1262,143 @@
         "pk": 3,
         "fields": {
             "user": 6,
-            "user_type": "Instructor",
-            "remaining_hours": 0
+            "user_type": "Instructor"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 14,
+        "fields": {
+            "user": 8,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 15,
+        "fields": {
+            "user": 9,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 16,
+        "fields": {
+            "user": 10,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 17,
+        "fields": {
+            "user": 11,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 18,
+        "fields": {
+            "user": 12,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 19,
+        "fields": {
+            "user": 13,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 20,
+        "fields": {
+            "user": 14,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 21,
+        "fields": {
+            "user": 15,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 22,
+        "fields": {
+            "user": 16,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 23,
+        "fields": {
+            "user": 17,
+            "user_type": "Instructor"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 24,
+        "fields": {
+            "user": 18,
+            "user_type": "Instructor"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 25,
+        "fields": {
+            "user": 19,
+            "user_type": "Instructor"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 26,
+        "fields": {
+            "user": 20,
+            "user_type": "Instructor"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 27,
+        "fields": {
+            "user": 21,
+            "user_type": "Instructor"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 28,
+        "fields": {
+            "user": 22,
+            "user_type": "Instructor"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 29,
+        "fields": {
+            "user": 23,
+            "user_type": "Instructor"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 30,
+        "fields": {
+            "user": 4,
+            "user_type": "Secretary"
         }
     },
     {
@@ -960,9 +1406,101 @@
         "pk": 1,
         "fields": {
             "user": 1,
+            "remaining_hours": 5,
+            "purchased_hours": 5,
             "packages": [
                 1
             ]
+        }
+    },
+    {
+        "model": "drivingschool.student",
+        "pk": 11,
+        "fields": {
+            "user": 14,
+            "remaining_hours": 0,
+            "purchased_hours": 0,
+            "packages": []
+        }
+    },
+    {
+        "model": "drivingschool.student",
+        "pk": 12,
+        "fields": {
+            "user": 15,
+            "remaining_hours": 0,
+            "purchased_hours": 0,
+            "packages": []
+        }
+    },
+    {
+        "model": "drivingschool.student",
+        "pk": 13,
+        "fields": {
+            "user": 16,
+            "remaining_hours": 0,
+            "purchased_hours": 0,
+            "packages": []
+        }
+    },
+    {
+        "model": "drivingschool.student",
+        "pk": 14,
+        "fields": {
+            "user": 17,
+            "remaining_hours": 5,
+            "purchased_hours": 5,
+            "packages": []
+        }
+    },
+    {
+        "model": "drivingschool.student",
+        "pk": 15,
+        "fields": {
+            "user": 18,
+            "remaining_hours": 0,
+            "purchased_hours": 0,
+            "packages": []
+        }
+    },
+    {
+        "model": "drivingschool.student",
+        "pk": 16,
+        "fields": {
+            "user": 19,
+            "remaining_hours": 0,
+            "purchased_hours": 0,
+            "packages": []
+        }
+    },
+    {
+        "model": "drivingschool.student",
+        "pk": 17,
+        "fields": {
+            "user": 20,
+            "remaining_hours": 0,
+            "purchased_hours": 0,
+            "packages": []
+        }
+    },
+    {
+        "model": "drivingschool.student",
+        "pk": 18,
+        "fields": {
+            "user": 21,
+            "remaining_hours": 1,
+            "purchased_hours": 1,
+            "packages": []
+        }
+    },
+    {
+        "model": "drivingschool.student",
+        "pk": 19,
+        "fields": {
+            "user": 22,
+            "remaining_hours": 20,
+            "purchased_hours": 20,
+            "packages": []
         }
     },
     {
@@ -977,6 +1515,55 @@
         "pk": 2,
         "fields": {
             "user": 3
+        }
+    },
+    {
+        "model": "drivingschool.instructor",
+        "pk": 3,
+        "fields": {
+            "user": 23
+        }
+    },
+    {
+        "model": "drivingschool.instructor",
+        "pk": 4,
+        "fields": {
+            "user": 24
+        }
+    },
+    {
+        "model": "drivingschool.instructor",
+        "pk": 5,
+        "fields": {
+            "user": 25
+        }
+    },
+    {
+        "model": "drivingschool.instructor",
+        "pk": 6,
+        "fields": {
+            "user": 26
+        }
+    },
+    {
+        "model": "drivingschool.instructor",
+        "pk": 7,
+        "fields": {
+            "user": 27
+        }
+    },
+    {
+        "model": "drivingschool.instructor",
+        "pk": 8,
+        "fields": {
+            "user": 28
+        }
+    },
+    {
+        "model": "drivingschool.instructor",
+        "pk": 9,
+        "fields": {
+            "user": 29
         }
     },
     {
@@ -1034,7 +1621,7 @@
             "student": 1,
             "instructor": 1,
             "date": "2023-06-03T11:00:00Z",
-            "duration": 1,
+            "duration": 2,
             "lesson_type": "ville",
             "location": "15, Avenue des Gobelins 75 005 Paris"
         }

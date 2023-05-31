@@ -2,6 +2,7 @@ import os
 import sys
 from datetime import timedelta
 from pathlib import Path
+
 from django.contrib import staticfiles
 from dotenv import load_dotenv, find_dotenv
 
@@ -162,6 +163,22 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
 }
+DATETIME_INPUT_FORMATS = [
+    "%d-%m-%Y %H:%M:%S.%f",
+    "%d-%m-%Y %H:%M:%S",
+    "%d-%m-%Y %H:%M",
+    "%Y-%m-%d %H:%M:%S.%f",
+    "%Y-%m-%d %H:%M:%S",
+    "%Y-%m-%d %H:%M",
+    "%Y-%m-%dT%H:%M",
+    "%m/%d/%y %H:%M:%S.%f",
+    "%m/%d/%Y %H:%M:%S.%f",
+    "%m/%d/%y %H:%M:%S",
+    "%m/%d/%Y %H:%M:%S",
+    "%m/%d/%y %H:%M",
+    "%m/%d/%Y %H:%M",
+]
+
 SPECTACULAR_SETTINGS = {
     "TITLE": "My driving school",
     "DESCRIPTION": """My driving school's API

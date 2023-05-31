@@ -57,3 +57,10 @@ GET http://127.0.0.1:8000/api/schema/swagger-ui/
 <hr />
 
 _Gildas Le Drogoff - 2023_
+
+
+Mireille Roux
+
+
+MDPMDPMDP
+

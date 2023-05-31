@@ -1,3 +1,4 @@
+import random
 from django.views.generic import TemplateView
 from drivingschool.models import UserProfile
 
@@ -57,12 +58,14 @@ class HomePageView(TemplateView):
             2,
             1,
         ]
+        random.shuffle(image_numbers)
         image_urls = [
             f"images/home/{image_number}.webp" for image_number in image_numbers
         ]
         context["image_urls"] = image_urls
         context["aos_effects"] = aos_effects
         if self.request.user.is_authenticated:
+            # print("\n🚀 > file : pages/views.py:68 > request:", print(dir(self.request)));
             user_profile = UserProfile.objects.get(user=self.request.user)
             context["user_role"] = user_profile.user_type
             context["full_name"] = user_profile.full_name

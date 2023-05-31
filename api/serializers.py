@@ -15,5 +15,5 @@ class UserSerializer(serializers.ModelSerializer):
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserProfile
-        fields = ("id", "user_type", "remaining_hours", "user_id")
+        fields = ("id", "user_type", "user_id")
         read_only_fields = ("id",)

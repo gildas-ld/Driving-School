@@ -71,3 +71,8 @@ Le projet est un intranet pour une auto-école qui permettra à l’école de g�
 - [] Permettre aux **Instructor** de créer des séries de questions
 - [] Permettre à un **Student** d’envoyer une demande de rendez-vous à un **Instructor** qui pourra accepter, refuser ou faire une autre proposition au **Student** qui pourra à son tour accepter, refuser ou faire une autre proposition. Jusqu’à ce qu’ils tombent d’accord sur un créneau ou que la demande soit refusée
 - [] Un système d’achat via l’intranet (paypal, carte bleue,... ) d’heure de leçons pour les **Student**
+
+<!-- Entre 
+08/05/2023, 08h42
+et 
+04/06/2023, 23h42  -->

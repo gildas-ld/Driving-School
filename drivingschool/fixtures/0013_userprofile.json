@@ -4,8 +4,7 @@
     "pk": 1,
     "fields": {
       "user": 1,
-      "user_type": "Student",
-      "remaining_hours": 5
+      "user_type": "Student"
     }
   },
   {
@@ -13,8 +12,7 @@
     "pk": 2,
     "fields": {
       "user": 5,
-      "user_type": "Instructor",
-      "remaining_hours": 0
+      "user_type": "Instructor"
     }
   },
   {
@@ -22,8 +20,143 @@
     "pk": 3,
     "fields": {
       "user": 6,
-      "user_type": "Instructor",
-      "remaining_hours": 0
+      "user_type": "Instructor"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 14,
+    "fields": {
+      "user": 8,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 15,
+    "fields": {
+      "user": 9,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 16,
+    "fields": {
+      "user": 10,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 17,
+    "fields": {
+      "user": 11,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 18,
+    "fields": {
+      "user": 12,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 19,
+    "fields": {
+      "user": 13,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 20,
+    "fields": {
+      "user": 14,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 21,
+    "fields": {
+      "user": 15,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 22,
+    "fields": {
+      "user": 16,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 23,
+    "fields": {
+      "user": 17,
+      "user_type": "Instructor"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 24,
+    "fields": {
+      "user": 18,
+      "user_type": "Instructor"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 25,
+    "fields": {
+      "user": 19,
+      "user_type": "Instructor"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 26,
+    "fields": {
+      "user": 20,
+      "user_type": "Instructor"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 27,
+    "fields": {
+      "user": 21,
+      "user_type": "Instructor"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 28,
+    "fields": {
+      "user": 22,
+      "user_type": "Instructor"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 29,
+    "fields": {
+      "user": 23,
+      "user_type": "Instructor"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 30,
+    "fields": {
+      "user": 4,
+      "user_type": "Secretary"
     }
   }
 ]

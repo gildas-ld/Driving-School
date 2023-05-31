@@ -1,4 +1,5 @@
 from django.urls import include, path
+
 from drivingschool.views import (
     create_appointment,
     delete_appointment,
@@ -12,6 +13,7 @@ from drivingschool.views import (
     purchase_package,
     student_detail,
     student_list,
+    GeneralScheduleView,
 )
 
 drivingschool_apis = [
@@ -28,8 +30,13 @@ appointments_urls = [
         edit_appointment,
         name="edit_appointment",
     ),
-    path("create_appointment/", create_appointment, name="create_appointment"),
+    path(
+        "create_appointment/<int:user_id>/",
+        create_appointment,
+        name="create_appointment",
+    ),
     path("schedule/", InstructorScheduleView.as_view(), name="schedule"),
+    path("general_schedule/", GeneralScheduleView.as_view(), name="general_schedule"),
     path("get_remaining_hours/", get_remaining_hours, name="get_remaining_hours"),
 ]
 packages_urls = [

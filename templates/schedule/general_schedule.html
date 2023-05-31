@@ -1,0 +1,37 @@
+<!-- schedule/general_schedule.html -->
+{% extends '_base.html' %}
+{% block content %}
+<h2>Planning général</h2>
+
+<table class="table table-striped table-hover" border="1">
+    <caption>Pour les secrétaires</caption>
+    <thead>
+        <tr>
+            <th scope="col">Étudiant</th>
+            <th scope="col">Instructeur</th>
+            <th scope="col">Date</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Type de leçon</th>
+            <th scope="col">Emplacement</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        {% for appointment in object_list %}
+        <tr>
+            <td>{{ appointment.student.user.full_name }}</td>
+            <td>{{ appointment.instructor.full_name }}</td>
+            <td>{{ appointment.date }}</td>
+            <td>{{ appointment.duration }} heure(s)</td>
+            <td>{{ appointment.lesson_type }}</td>
+            <td>{{ appointment.location }}</td>
+            <td>
+                <a href="{% url 'edit_appointment' appointment.id %}">Modifier</a> |
+                <a href="{% url 'delete_appointment' appointment.id %}">Supprimer</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

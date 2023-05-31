@@ -59,6 +59,14 @@
                                     <a class="nav-link" href="{% url 'schedule' %}">Planning</a>
                                 </li>
                             {% endif %}
+                            {% if user_role == "Secretary" %}
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="{% url 'general_schedule' %}"
+                                >Planning secrétaire</a>
+                            </li>
+                            {% endif %}
                         {% endif %}
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'about' %}">À propos</a>

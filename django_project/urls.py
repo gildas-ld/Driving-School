@@ -13,6 +13,7 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
     TokenVerifyView,
 )
+
 from drivingschool.urls import drivingschool_urlpatterns
 from drivingschool.views import RegisterView
 

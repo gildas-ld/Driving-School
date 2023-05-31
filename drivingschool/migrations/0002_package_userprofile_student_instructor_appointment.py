@@ -1,12 +1,13 @@
-import django.db.models.deletion
 from django.conf import settings
 from django.db import migrations, models
+import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
     dependencies = [
         ("drivingschool", "0001_initial"),
     ]
+
     operations = [
         migrations.CreateModel(
             name="Package",
@@ -52,7 +53,6 @@ class Migration(migrations.Migration):
                         max_length=10,
                     ),
                 ),
-                ("remaining_hours", models.PositiveIntegerField(default=0)),
                 (
                     "user",
                     models.OneToOneField(
@@ -74,6 +74,8 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
+                ("remaining_hours", models.PositiveIntegerField(default=0)),
+                ("purchased_hours", models.PositiveIntegerField(default=0)),
                 ("packages", models.ManyToManyField(to="drivingschool.package")),
                 (
                     "user",
@@ -118,6 +120,19 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("date", models.DateTimeField()),
+                ("duration", models.PositiveIntegerField(default=0)),
+                (
+                    "lesson_type",
+                    models.CharField(
+                        choices=[
+                            ("autoroute", "Autoroute"),
+                            ("parking", "Parking"),
+                            ("ville", "Conduite en ville"),
+                        ],
+                        default="ville",
+                        max_length=100,
+                    ),
+                ),
                 ("location", models.CharField(max_length=100)),
                 (
                     "instructor",
@@ -130,9 +145,12 @@ class Migration(migrations.Migration):
                     "student",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        to="drivingschool.userprofile",
+                        to="drivingschool.student",
                     ),
                 ),
             ],
+            options={
+                "ordering": ["-date"],
+            },
         ),
     ]

@@ -2,7 +2,7 @@
 {% block content %}
 <h2>Supprimer le rendez-vous</h2>
 <p>Êtes-vous sûr de vouloir supprimer le rendez-vous du {{ appointment.date }} avec {{ appointment.student }} et {{
-    appointment.instructor }}?</p>
+    appointment.instructor }} ?</p>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}

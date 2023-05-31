@@ -12,5 +12,54 @@
     "fields": {
       "user": 3
     }
+  },
+  {
+    "model": "drivingschool.instructor",
+    "pk": 3,
+    "fields": {
+      "user": 23
+    }
+  },
+  {
+    "model": "drivingschool.instructor",
+    "pk": 4,
+    "fields": {
+      "user": 24
+    }
+  },
+  {
+    "model": "drivingschool.instructor",
+    "pk": 5,
+    "fields": {
+      "user": 25
+    }
+  },
+  {
+    "model": "drivingschool.instructor",
+    "pk": 6,
+    "fields": {
+      "user": 26
+    }
+  },
+  {
+    "model": "drivingschool.instructor",
+    "pk": 7,
+    "fields": {
+      "user": 27
+    }
+  },
+  {
+    "model": "drivingschool.instructor",
+    "pk": 8,
+    "fields": {
+      "user": 28
+    }
+  },
+  {
+    "model": "drivingschool.instructor",
+    "pk": 9,
+    "fields": {
+      "user": 29
+    }
   }
 ]

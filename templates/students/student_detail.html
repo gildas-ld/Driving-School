@@ -1,12 +1,13 @@
 <!-- students/student_detail.html -->
 {% extends '_base.html' %}
 {% block content %}
-  <h2>Bienvenue {{ user_profile.user.username|capfirst }}</h2>
+  <h2>Bienvenue {{ student.user.username|capfirst }}</h2>
   <p>
-    Nombre d'heures restantes : {{ user_profile.remaining_hours }}
-    {% if user_profile.remaining_hours > 0 %}
+    Nombre d'heures restantes : {{ student.remaining_hours }} <br />
+    Nombre d'heures achetées : {{ student.purchased_hours }}
+    {% if student.remaining_hours > 0 %}
       <p>
-        Nous vous suggérons de prendre un rendez-vous en utilisant vos heures restantes. <a href="{% url 'create_appointment' %}">Prendre un rendez-vous</a>
+        Nous vous suggérons de prendre un rendez-vous en utilisant vos heures restantes. <a href="{% url 'create_appointment' user_id=request.user.id %}">Prendre un rendez-vous</a>
       </p>
     </p>
   {% else %}
