@@ -807,12 +807,12 @@
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
             "last_login": "2023-05-17T00:00:00Z",
-            "is_superuser": false,
+            "is_superuser": true,
             "username": "Olga Ortega",
             "first_name": "Olga",
             "last_name": "Ortega",
             "email": "olga.ortega@epitech.eu",
-            "is_staff": false,
+            "is_staff": true,
             "is_active": true,
             "date_joined": "2023-05-17T00:00:00Z",
             "groups": [
@@ -1175,15 +1175,18 @@
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
             "last_login": "2023-05-17T00:00:00Z",
-            "is_superuser": false,
+            "is_superuser": true,
             "username": "Briony Taylor",
             "first_name": "Briony",
             "last_name": "Taylor",
             "email": "b.taylor@epitech.eu",
-            "is_staff": false,
+            "is_staff": true,
             "is_active": true,
             "date_joined": "2023-05-17T00:00:00Z",
-            "groups": [],
+            "groups": [
+                3,
+                4
+            ],
             "user_permissions": []
         }
     },
@@ -1193,15 +1196,17 @@
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
             "last_login": "2023-05-17T00:00:00Z",
-            "is_superuser": false,
+            "is_superuser": true,
             "username": "Steven Carroll",
             "first_name": "Steven",
             "last_name": "Carroll",
             "email": "s.carroll@epitech.eu",
-            "is_staff": false,
+            "is_staff": true,
             "is_active": true,
             "date_joined": "2023-05-17T00:00:00Z",
-            "groups": [],
+            "groups": [
+                3
+            ],
             "user_permissions": []
         }
     },
@@ -1211,15 +1216,17 @@
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
             "last_login": "2023-05-17T00:00:00Z",
-            "is_superuser": false,
-            "username": "Melissa Bailey",
+            "is_superuser": true,
+            "username": "MelissaBailey",
             "first_name": "Melissa",
             "last_name": "Bailey",
             "email": "m.bailey@epitech.eu",
-            "is_staff": false,
+            "is_staff": true,
             "is_active": true,
             "date_joined": "2023-05-17T00:00:00Z",
-            "groups": [],
+            "groups": [
+                3
+            ],
             "user_permissions": []
         }
     },
@@ -1229,15 +1236,17 @@
         "fields": {
             "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
             "last_login": "2023-05-17T00:00:00Z",
-            "is_superuser": false,
-            "username": "Carl Miller",
+            "is_superuser": true,
+            "username": "CarlMiller",
             "first_name": "Carl",
             "last_name": "Miller",
             "email": "c.miller@epitech.eu",
-            "is_staff": false,
+            "is_staff": true,
             "is_active": true,
             "date_joined": "2023-05-17T00:00:00Z",
-            "groups": [],
+            "groups": [
+                3
+            ],
             "user_permissions": []
         }
     },
@@ -1402,12 +1411,68 @@
         }
     },
     {
+        "model": "drivingschool.userprofile",
+        "pk": 31,
+        "fields": {
+            "user": 27,
+            "user_type": "Secretary"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 32,
+        "fields": {
+            "user": 2,
+            "user_type": "Admin"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 33,
+        "fields": {
+            "user": 3,
+            "user_type": "Student"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 34,
+        "fields": {
+            "user": 7,
+            "user_type": "Instructor"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 35,
+        "fields": {
+            "user": 24,
+            "user_type": "Admin"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 36,
+        "fields": {
+            "user": 25,
+            "user_type": "Secretary"
+        }
+    },
+    {
+        "model": "drivingschool.userprofile",
+        "pk": 37,
+        "fields": {
+            "user": 26,
+            "user_type": "Secretary"
+        }
+    },
+    {
         "model": "drivingschool.student",
         "pk": 1,
         "fields": {
             "user": 1,
-            "remaining_hours": 5,
-            "purchased_hours": 5,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": [
                 1
             ]
@@ -1418,8 +1483,8 @@
         "pk": 11,
         "fields": {
             "user": 14,
-            "remaining_hours": 0,
-            "purchased_hours": 0,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": []
         }
     },
@@ -1428,8 +1493,8 @@
         "pk": 12,
         "fields": {
             "user": 15,
-            "remaining_hours": 0,
-            "purchased_hours": 0,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": []
         }
     },
@@ -1438,8 +1503,8 @@
         "pk": 13,
         "fields": {
             "user": 16,
-            "remaining_hours": 0,
-            "purchased_hours": 0,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": []
         }
     },
@@ -1448,8 +1513,8 @@
         "pk": 14,
         "fields": {
             "user": 17,
-            "remaining_hours": 5,
-            "purchased_hours": 5,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": []
         }
     },
@@ -1458,8 +1523,8 @@
         "pk": 15,
         "fields": {
             "user": 18,
-            "remaining_hours": 0,
-            "purchased_hours": 0,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": []
         }
     },
@@ -1468,8 +1533,8 @@
         "pk": 16,
         "fields": {
             "user": 19,
-            "remaining_hours": 0,
-            "purchased_hours": 0,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": []
         }
     },
@@ -1478,8 +1543,8 @@
         "pk": 17,
         "fields": {
             "user": 20,
-            "remaining_hours": 0,
-            "purchased_hours": 0,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": []
         }
     },
@@ -1488,8 +1553,8 @@
         "pk": 18,
         "fields": {
             "user": 21,
-            "remaining_hours": 1,
-            "purchased_hours": 1,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": []
         }
     },
@@ -1498,8 +1563,8 @@
         "pk": 19,
         "fields": {
             "user": 22,
-            "remaining_hours": 20,
-            "purchased_hours": 20,
+            "remaining_hours": 25,
+            "purchased_hours": 25,
             "packages": []
         }
     },
@@ -1621,7 +1686,7 @@
             "student": 1,
             "instructor": 1,
             "date": "2023-06-03T11:00:00Z",
-            "duration": 2,
+            "duration": 1,
             "lesson_type": "ville",
             "location": "15, Avenue des Gobelins 75 005 Paris"
         }

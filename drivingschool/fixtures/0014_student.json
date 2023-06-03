@@ -4,8 +4,8 @@
     "pk": 1,
     "fields": {
       "user": 1,
-      "remaining_hours": 5,
-      "purchased_hours": 5,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": [
         1
       ]
@@ -16,8 +16,8 @@
     "pk": 11,
     "fields": {
       "user": 14,
-      "remaining_hours": 0,
-      "purchased_hours": 0,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": []
     }
   },
@@ -26,8 +26,8 @@
     "pk": 12,
     "fields": {
       "user": 15,
-      "remaining_hours": 0,
-      "purchased_hours": 0,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": []
     }
   },
@@ -36,8 +36,8 @@
     "pk": 13,
     "fields": {
       "user": 16,
-      "remaining_hours": 0,
-      "purchased_hours": 0,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": []
     }
   },
@@ -46,8 +46,8 @@
     "pk": 14,
     "fields": {
       "user": 17,
-      "remaining_hours": 5,
-      "purchased_hours": 5,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": []
     }
   },
@@ -56,8 +56,8 @@
     "pk": 15,
     "fields": {
       "user": 18,
-      "remaining_hours": 0,
-      "purchased_hours": 0,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": []
     }
   },
@@ -66,8 +66,8 @@
     "pk": 16,
     "fields": {
       "user": 19,
-      "remaining_hours": 0,
-      "purchased_hours": 0,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": []
     }
   },
@@ -76,8 +76,8 @@
     "pk": 17,
     "fields": {
       "user": 20,
-      "remaining_hours": 0,
-      "purchased_hours": 0,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": []
     }
   },
@@ -86,8 +86,8 @@
     "pk": 18,
     "fields": {
       "user": 21,
-      "remaining_hours": 1,
-      "purchased_hours": 1,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": []
     }
   },
@@ -96,8 +96,8 @@
     "pk": 19,
     "fields": {
       "user": 22,
-      "remaining_hours": 20,
-      "purchased_hours": 20,
+      "remaining_hours": 25,
+      "purchased_hours": 25,
       "packages": []
     }
   }

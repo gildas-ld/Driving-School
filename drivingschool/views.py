@@ -90,11 +90,19 @@ student_list = StudentListView.as_view()
 def student_detail(request, user_id):
     try:
         user_profile = UserProfile.objects.get(user__id=user_id)
+        print("\n🚀 > file : drivingschool/views.py:93 > user_profile:", user_profile)
         student = Student.objects.get(user=user_profile)
+        print("\n🚀 > file : drivingschool/views.py:96 > student:", student)
+
     except:
+        user_profile = UserProfile.objects.get(user__id=user_id)
+        user_type = user_profile.user_type
+        if user_type == "Instructor":
+            return redirect(reverse("schedule"))
         print(f"Student with user_id {user_id} not found!")
         # Handle the exception
-        return HttpResponse("Student not found", status=404)
+        pass
+        # return HttpResponse("Student not found", status=404)
 
     print(f"Found student: {student}")
     print(student.__dict__)
@@ -128,7 +136,10 @@ def create_appointment(request, user_id):
         return redirect("login")
     try:
         user_profile = UserProfile.objects.get(user__id=request.user.id)
-        student = Student.objects.get(user=user_profile)
+        user_type = user_profile.user_type
+        print("user_type", user_type)
+
+        # student = Student.objects.get(user=user_profile)
         # print("Request UserProfile: ", user_profile)
         # print("Request request.user: ", request.user)
     except UserProfile.DoesNotExist:

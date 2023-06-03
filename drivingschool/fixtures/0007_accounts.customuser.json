@@ -66,12 +66,12 @@
     "fields": {
       "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
       "last_login": "2023-05-17T00:00:00Z",
-      "is_superuser": false,
+      "is_superuser": true,
       "username": "Olga Ortega",
       "first_name": "Olga",
       "last_name": "Ortega",
       "email": "olga.ortega@epitech.eu",
-      "is_staff": false,
+      "is_staff": true,
       "is_active": true,
       "date_joined": "2023-05-17T00:00:00Z",
       "groups": [
@@ -434,15 +434,18 @@
     "fields": {
       "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
       "last_login": "2023-05-17T00:00:00Z",
-      "is_superuser": false,
+      "is_superuser": true,
       "username": "Briony Taylor",
       "first_name": "Briony",
       "last_name": "Taylor",
       "email": "b.taylor@epitech.eu",
-      "is_staff": false,
+      "is_staff": true,
       "is_active": true,
       "date_joined": "2023-05-17T00:00:00Z",
-      "groups": [],
+      "groups": [
+        3,
+        4
+      ],
       "user_permissions": []
     }
   },
@@ -452,15 +455,17 @@
     "fields": {
       "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
       "last_login": "2023-05-17T00:00:00Z",
-      "is_superuser": false,
+      "is_superuser": true,
       "username": "Steven Carroll",
       "first_name": "Steven",
       "last_name": "Carroll",
       "email": "s.carroll@epitech.eu",
-      "is_staff": false,
+      "is_staff": true,
       "is_active": true,
       "date_joined": "2023-05-17T00:00:00Z",
-      "groups": [],
+      "groups": [
+        3
+      ],
       "user_permissions": []
     }
   },
@@ -470,15 +475,17 @@
     "fields": {
       "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
       "last_login": "2023-05-17T00:00:00Z",
-      "is_superuser": false,
+      "is_superuser": true,
       "username": "Melissa Bailey",
       "first_name": "Melissa",
       "last_name": "Bailey",
       "email": "m.bailey@epitech.eu",
-      "is_staff": false,
+      "is_staff": true,
       "is_active": true,
       "date_joined": "2023-05-17T00:00:00Z",
-      "groups": [],
+      "groups": [
+        3
+      ],
       "user_permissions": []
     }
   },
@@ -488,15 +495,17 @@
     "fields": {
       "password": "pbkdf2_sha256$600000$opad27UjzOzQYRCLpCJsar$ymiVX/GQ/jeLbpqsgeAB9Jj9g0A7QTKK1LSCibAS/Ag=",
       "last_login": "2023-05-17T00:00:00Z",
-      "is_superuser": false,
+      "is_superuser": true,
       "username": "Carl Miller",
       "first_name": "Carl",
       "last_name": "Miller",
       "email": "c.miller@epitech.eu",
-      "is_staff": false,
+      "is_staff": true,
       "is_active": true,
       "date_joined": "2023-05-17T00:00:00Z",
-      "groups": [],
+      "groups": [
+        3
+      ],
       "user_permissions": []
     }
   }

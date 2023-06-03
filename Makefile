@@ -13,3 +13,6 @@ clean-database:
 
 lint:
 	source ./venv/bin/activate && black .
+
+dumpdata:
+	python3 manage.py dumpdata --indent 4 >| full_dump.json 

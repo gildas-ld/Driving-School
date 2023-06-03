@@ -77,5 +77,8 @@ class Appointment(models.Model):
     def __str__(self):
         return f"Lesson on {self.date} with {self.student} and {self.instructor}"
 
+    def instructor_full_name(self):  # NOPE
+        return f"{self.instructor.user.first_name} {self.instructor.user.last_name}"
+
     class Meta:
         ordering = ["-date"]

@@ -158,5 +158,61 @@
       "user": 4,
       "user_type": "Secretary"
     }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 31,
+    "fields": {
+      "user": 27,
+      "user_type": "Secretary"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 32,
+    "fields": {
+      "user": 2,
+      "user_type": "Admin"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 33,
+    "fields": {
+      "user": 3,
+      "user_type": "Student"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 34,
+    "fields": {
+      "user": 7,
+      "user_type": "Instructor"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 35,
+    "fields": {
+      "user": 24,
+      "user_type": "Admin"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 36,
+    "fields": {
+      "user": 25,
+      "user_type": "Secretary"
+    }
+  },
+  {
+    "model": "drivingschool.userprofile",
+    "pk": 37,
+    "fields": {
+      "user": 26,
+      "user_type": "Secretary"
+    }
   }
 ]

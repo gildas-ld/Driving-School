@@ -1,4 +1,4 @@
-digraph "auth_group" {
+digraph "public" {
 
 splines  = ortho;
 fontname = "Inconsolata";

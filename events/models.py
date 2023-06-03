@@ -22,8 +22,8 @@ class Event(models.Model):
         overlap = False
         if new_start == fixed_end or new_end == fixed_start:  # edge case
             overlap = False
-        elif (new_start >= fixed_start and new_start <= fixed_end) or (
-            new_end >= fixed_start and new_end <= fixed_end
+        elif (fixed_start <= new_start <= fixed_end) or (
+            fixed_start <= new_end <= fixed_end
         ):  # innner limits
             overlap = True
         elif new_start <= fixed_start and new_end >= fixed_end:  # outter limits
