@@ -12,7 +12,7 @@ from rest_framework import generics
 from rest_framework.permissions import (
     AllowAny,
 )
-
+from icecream import ic
 from .decorators import redirect_secretary
 from .forms import PurchasePackageForm, CreateAppointmentForm
 from .models import Appointment, Instructor, UserProfile, Student, Package
@@ -90,22 +90,17 @@ student_list = StudentListView.as_view()
 def student_detail(request, user_id):
     try:
         user_profile = UserProfile.objects.get(user__id=user_id)
-        print("\n🚀 > file : drivingschool/views.py:93 > user_profile:", user_profile)
         student = Student.objects.get(user=user_profile)
-        print("\n🚀 > file : drivingschool/views.py:96 > student:", student)
 
     except:
         user_profile = UserProfile.objects.get(user__id=user_id)
         user_type = user_profile.user_type
         if user_type == "Instructor":
             return redirect(reverse("schedule"))
-        print(f"Student with user_id {user_id} not found!")
         # Handle the exception
         pass
         # return HttpResponse("Student not found", status=404)
 
-    print(f"Found student: {student}")
-    print(student.__dict__)
     appointments = Appointment.objects.filter(student=student)
     context = {"student": student, "appointments": appointments}
     return render(request, "students/student_detail.html", context)
@@ -128,20 +123,19 @@ appointment_create = AppointmentCreateView.as_view()
 
 
 def create_appointment(request, user_id):
-    # print("Request user_id: ", user_id)
-    # print("Request User: ", request.user)
-    # print("Request User.id: ", request.user.id)
-    # print("Request User.__dict__: ", request.user.__dict__)
+    # ic("Request user_id: ", user_id)
+    # ic("Request User: ", request.user)
+    # ic("Request User.id: ", request.user.id)
+    # ic("Request User.__dict__: ", request.user.__dict__)
     if not request.user.is_authenticated:
         return redirect("login")
     try:
         user_profile = UserProfile.objects.get(user__id=request.user.id)
         user_type = user_profile.user_type
-        print("user_type", user_type)
 
         # student = Student.objects.get(user=user_profile)
-        # print("Request UserProfile: ", user_profile)
-        # print("Request request.user: ", request.user)
+        # ic("Request UserProfile: ", user_profile)
+        # ic("Request request.user: ", request.user)
     except UserProfile.DoesNotExist:
         # Handle exception
         pass
@@ -153,7 +147,7 @@ def create_appointment(request, user_id):
 
             user_profile = UserProfile.objects.get(user_id=request.user.id)
             user_type = user_profile.user_type
-            print("user_type", user_type)
+            ic("user_type", user_type)
 
             if user_profile.user_type == "Instructor":
                 # For instructors, they pick the student
@@ -161,7 +155,7 @@ def create_appointment(request, user_id):
             elif user_profile.user_type == "Student":
                 student_profile = user_profile
             else:
-                print(request, "Only students or instructors can create appointments!")
+                ic(request, "Only students or instructors can create appointments!")
                 return redirect("create_appointment")
 
             duration = form.cleaned_data["duration"]
@@ -174,9 +168,9 @@ def create_appointment(request, user_id):
                 return redirect("create_appointment")
 
             student.remaining_hours -= duration
-            print("\n\n")
-            print("Request student.remaining_hours : ", student.remaining_hours)
-            print("Request duration : ", duration)
+            ic("\n\n")
+            ic("Request student.remaining_hours : ", student.remaining_hours)
+            ic("Request duration : ", duration)
             student.save()
             appointment.save()
 
@@ -222,9 +216,9 @@ def purchase_package(request, pk):
     package = get_object_or_404(Package, pk=pk)
     student_id = request.user.id
     if request.user.is_authenticated:
-        print("\n\n")
-        print(request.user.__dict__)
-        print("\n\n")
+        ic("\n\n")
+        ic(request.user.__dict__)
+        ic("\n\n")
         # return redirect("student_detail", pk=request.user.id)
     else:
         return redirect("login")
@@ -244,7 +238,7 @@ def purchase_package(request, pk):
                 request,
                 f"You purchased {quantity} x {package.name} package(s). Added {total_hours} hours.",
             )
-            print(
+            ic(
                 request,
                 f"You purchased {quantity} x {package.name} package(s). Added {total_hours} hours.",
             )

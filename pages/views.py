@@ -1,6 +1,7 @@
 import random
 from django.views.generic import TemplateView
 from drivingschool.models import UserProfile
+from icecream import ic
 
 
 class HomePageView(TemplateView):
@@ -65,7 +66,7 @@ class HomePageView(TemplateView):
         context["image_urls"] = image_urls
         context["aos_effects"] = aos_effects
         if self.request.user.is_authenticated:
-            # print("\n🚀 > file : pages/views.py:68 > request:", print(dir(self.request)));
+            # ic("\n🚀 > file : pages/views.py:68 > request:", ic(dir(self.request)))
             user_profile = UserProfile.objects.get(user=self.request.user)
             context["user_role"] = user_profile.user_type
             context["full_name"] = user_profile.full_name

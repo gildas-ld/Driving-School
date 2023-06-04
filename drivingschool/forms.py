@@ -72,11 +72,7 @@ class CreateAppointmentForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         user_profile = kwargs.pop("user_profile", None)
-        print("\n🚀 > file : drivingschool/forms.py:72 > user_profile:", user_profile)
-
         instance = kwargs.get("instance", None)
-        print("\n🚀 > file : drivingschool/forms.py:75 > instance:", instance)
-
         super().__init__(*args, **kwargs)
         today = date.today().strftime("%Y-%m-%dT%H:%M")
         self.fields["date"].widget.attrs["min"] = today
