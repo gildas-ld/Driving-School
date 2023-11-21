@@ -71,7 +71,7 @@ python manage.py collectstatic
 python manage.py runserver
 ```
 
-### Users in fixtures
+### Some users in fixtures
 
 | username          | email                        | user_type  |
 | :---------------- | :--------------------------- | :--------- |
@@ -80,27 +80,15 @@ python manage.py runserver
 | Alberte Bonnet    | alberte.bonnet@epitech.eu    | Instructor |
 | Alen Cunningham   | a.cunningham@epitech.eu      | Instructor |
 | Alfred Douglas    | a.douglas@epitech.eu         | Instructor |
-| Emily Sullivan    | e.sullivan@epitech.eu        | Instructor |
-| James Clark       | j.clark@epitech.eu           | Instructor |
-| Jordan Scott      | j.scott@epitech.eu           | Instructor |
-| Julian Craig      | j.craig@epitech.eu           | Instructor |
-| Kelsey Carroll    | k.carroll@epitech.eu         | Instructor |
 | Mireille Roux     | mireille.roux@epitech.eu     | Instructor |
 | Robert Dupond     | robert.dupond@epitech.eu     | Instructor |
 | Carl Miller       | c.miller@epitech.eu          | Secretary  |
 | Melissa Bailey    | m.bailey@epitech.eu          | Secretary  |
 | Olga Ortega       | olga.ortega@epitech.eu       | Secretary  |
 | Steven Carroll    | s.carroll@epitech.eu         | Secretary  |
-| Albert Holmes     | a.holmes@epitech.eu          | Student    |
-| Alina Morgan      | a.morgan@epitech.eu          | Student    |
 | Fiona Stevens     | f.stevens@epitech.eu         | Student    |
 | Gildas Le Drogoff | gildas.le-drogoff@epitech.eu | Student    |
 | Hugo Dutreuil     | hugo.dutreuil@epitech.eu     | Student    |
-| Jack Campbell     | j.campbell@epitech.eu        | Student    |
-| James Hawkins     | j.hawkins@epitech.eu         | Student    |
-| Lucy Anderson     | l.anderson@epitech.eu        | Student    |
-| Ned Ellis         | n.ellis@epitech.eu           | Student    |
-| Oliver Fowler     | o.fowler@epitech.eu          | Student    |
 | Paul Evans        | p.evans@epitech.eu           | Student    |
 
 <hr />
@@ -110,3 +98,30 @@ _Gildas Le Drogoff - 2023_
 <!-- Mireille Roux
 
 MDPMDPMDP -->
+
+## Demo
+
+<img src="./demo_images/15-30-21.png"
+alt="15-30-21"
+style="width: 450px;"
+/>
+
+<img src="./demo_images/15-32-27.png"
+alt="15-32-27"
+style="width: 450px;" 
+/>
+
+<img src="./demo_images/15-32-16.png"
+alt="15-32-16"
+style="width: 450px;"
+/>
+
+<img src="./demo_images/15-31-59.png"
+alt="15-31-59"
+style="width: 450px;" 
+/>
+
+<img src="./demo_images/15-31-03.png"
+alt="15-31-03"
+style="width: 450px;"
+/>
